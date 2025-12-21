@@ -36,4 +36,4 @@ I enjoy diving deep into:
 * **Email:** : pysuk88@gmail.com
 * **GitHub:** [JeongSeoJin](https://github.com/JeongSeoJin)
 * **Instagram:** [Engineering.seojin_n.n]
-* **Youtube:** [Engineering Seojin]
+* **GitHub:** [Engineering Seojin]

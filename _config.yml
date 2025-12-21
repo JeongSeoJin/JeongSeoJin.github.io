@@ -5,7 +5,7 @@ description: >-
 
 # ▼▼▼ 여기에 이 코드를 추가하세요 ▼▼▼
 header_pages:
-  - README.md        # Home (보통 첫 페이지)
-  - qdd-actuator.md     # Projects (방금 만든 파일)
-  - about.md        # About (있다면)
+  - README.md
+  - projects.md     # qdd-actuator.md 대신 이걸로 변경 추천
+  - about.md
 # ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲

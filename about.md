@@ -15,7 +15,7 @@ permalink: /About/
 
 ### 🚀 About Me
 
-I am a robotics enthusiast who loves to build Robots **from scratch**.
+I am a robotics enthusiast who loves to build Robots **from scratch**. And first-year mechanical engineering student in KOREA
 My passion lies in developing high-performance **Actuators** and bridging the gap between mechanical design and control theory.
 
 I enjoy diving deep into:

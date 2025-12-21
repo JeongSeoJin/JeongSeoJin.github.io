@@ -14,7 +14,7 @@ I designed and built a cycloidal quasi-direct drive actuator using a custom cycl
 * **Keywards:** BLDC Motor, Cycloidal Gear, QDD architecture, 3D printing, robotic actuator
 * **Status:** Testing & Validation
 
-### [Robot Arm](/quasi-direct-drive-actuator/)
+### [Robot Arm]()
 **2025.7.5 - Present**
 
 > **"Designed 3d printed low cost robotic arm"**

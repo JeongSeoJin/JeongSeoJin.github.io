@@ -4,4 +4,4 @@ title: Studies
 permalink: /studies/
 ---
 
-### [What is PPO Algorithm?](/quasi-direct-drive-actuator/)
+### [What is PPO Algorithm?]()

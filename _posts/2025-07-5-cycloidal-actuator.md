@@ -7,3 +7,5 @@ tags: [Robotics, Actuator, QDD, Mechanical Design]
 permalink: /quasi-direct-drive-actuator/
 pin: true
 ---
+
+Hello this is actuator link

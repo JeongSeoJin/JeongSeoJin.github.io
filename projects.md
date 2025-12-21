@@ -3,8 +3,8 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-
-### [Cycloidal QDD Actuator]({% link _posts/2025-07-05-cycloidal-actuator.md %})
+---
+### [Cycloidal QDD Actuator](/quasi-direct-drive-actuator/)
 **2025.7.5 - Present**
 
 > **"Designed a Cycloidal QDD Actuator for dynamic robots."**

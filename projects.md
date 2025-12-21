@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 ---
-### [Cycloidal QDD Actuator](/quasi-direct-drive-actuator/)
+### [Cycloidal QDD Actuator](/c-qdd-actuator/c-qdd-actuator.md)
 **2025.7.5 - Present**
 
 > **"Designed a Cycloidal QDD Actuator for dynamic robots."**

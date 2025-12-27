@@ -64,9 +64,9 @@ The continuous torque is directly related to motor constant, which represents to
 $$K_M =  \frac{\tau}{\sqrt{I^2R}}$$
 
 where:  
-- $\tau = torque$  
-- $I = current$  
-- $R = resistance$ $$
+- $\tau : torque$  
+- $I : current$  
+- $R : resistance$ $$
 
 For example, if the torque density of the motor doubles without changing other factors, the Joule heating Ej can be reduced by 75%.
 

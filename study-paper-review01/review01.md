@@ -32,16 +32,21 @@ It ultimately uses the **Cost of Transport ($CoT = \frac{power}{weight \times ve
 
 <td><img src="figure1.png" width="400" alt="Actuator image 1" /></td>
 
+---
+
 ## Key Contributions
 - **Energy Analysis** : effectively reduced energy loss based on energy flow of the entire locomotive system. 
 - **High Efficiency** : MIT Cheetah achieved a cost of transport of 0.5 that rivals running animals and significantly lower than other running robots of its time.
 - **Proprioceptive Actuator Design** : Demonstrated the effectiveness of low-gear ratio actuators(QDD) for dynamic interactions
 
+---
 
 ## Background of why I read this paper
 In [my previous project](/project-c-qdd-actuator/c-qdd-actuator.md), **Development of Cycloidal-QDD Actuator**, I focused primarily on a mechanical implementation of my actuator to ensure the actuator worked. However, I realized the torque density and energy management system were not optimized. I lacked a comprehensive understanding of how individual actuator efficiency impacts the overall locomotive system. 
 
 This paper was perfect resource to bridge that gap. It clearly organizes the principle of energy-efficient actuator in dynamic locomotion. As I'm now focusing on building high-performance actuators for successful dynamic control, understanding the principle applied to MIT Cheetah is crucial for my future work.
+
+---
 
 ## Critical Thinking & Takeaway
 
@@ -49,7 +54,7 @@ This paper was perfect resource to bridge that gap. It clearly organizes the pri
 ![figure2](figure2.png)
 Through above energy flow diagram in locomotion, I could analyze what exactly causes the energy loss in my actuator. 
 
-#### 2. High Torque Density Motor(Large Gap Radius Motor)
+#### 2. High Torque Density Motor(Large Gap Radius Motor) related to $E_j$
 the electromagnetic(EM) motors with high-torque density minimize energy loss in actuators. Torque Density($\frac{torque}{mass}$) directly concerns the Joule heating of the EM motor by reducing the required electric current to provide torque. 
 
 Continuous torque of the motor represents how much torque
@@ -89,12 +94,13 @@ squared per electric power, also known as motor constant
 square, a measure of torque production efficiency, scales by $\tau^2/I^2R = K^2_M \propto r_{gap}^3$. the results will favor the motor with the larger gap radius because it will have a smaller gear ratio and fewer gear-train stages; this results in less friction loss, higher torque density, and higher bandwidth.
 <td><img src="figure5.png" width="400" alt="Figure5" /></td>
 
-#### 3. Low Impedance Mechanical Transmission(low gear ratio transmission)
-Employing gears significantly reduces the torque demands on the motors while increasing torque density and reducing Joule Heating Loss($E_j$). However, employing gears increase mechanical impedance like reflected inertia, reflected damping and gear friction while reducing back drivability, transmission transparency, efficiency and Transmission Loss($E_f$) . Futher more, it may limit the control of the robot dynamics.
+#### 3. Low Impedance Mechanical Transmission(low gear ratio transmission) related to $E_f$
+Employing gears significantly reduces the torque demands on the motors while increasing torque density and reducing Joule Heating Loss($E_j$). However, employing gears increase mechanical impedance like reflected inertia, reflected damping and gear friction while reducing back drivability, transmission transparency, efficiency. Futher more, it may limit the control of the robot dynamics.
 
-To minimize the lossess($E_f$) associated with employment of gears, the low number of gear stages are ineviatble especially in planetary gear which accumulate backlash stage after stage. And relatively low ratio reduces the contribution of reflected actuator dynamics on the mechanical impedance of the transmission. Therefore, low gear ratio is essential for efficient actuator design and the control for the dynamic robots
+To minimize the lossess($E_f$) associated with employment of gears, the low number of gear stages is ineviatble especially in planetary gear which accumulate backlash stage after stage. And relatively low ratio reduces the contribution of reflected actuator dynamics on the mechanical impedance of the transmission. Therefore, low gear ratio is essential for efficient actuator design and the control for the dynamic robots
 
 
-#### 4. Energy Regeneration
+#### 4. Low Inertia Leg
+Low Inertia Leg is especially cruicial for dynamic locomotion, such as  higher stride frequency running increasing high bandwidth of the leg. Additionally Low Inertia leg mitigate impact loss($E_i$) at touch down at every step. A large portion of the kinetic energy of the leg should be dissipated not only in the cyclic motion but also when the legs collide with the ground. therefore, employing low mass, inertia to the dynamic robots is critical for reducing energy loss caused by interaction between robot and environment. 
 
 

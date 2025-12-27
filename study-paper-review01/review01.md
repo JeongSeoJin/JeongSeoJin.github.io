@@ -103,4 +103,15 @@ To minimize the lossess($E_f$) associated with employment of gears, the low numb
 #### 4. Low Inertia Leg
 Low Inertia Leg is especially cruicial for dynamic locomotion, such as  higher stride frequency running increasing high bandwidth of the leg. Additionally Low Inertia leg mitigate impact loss($E_i$) at touch down at every step. A large portion of the kinetic energy of the leg should be dissipated not only in the cyclic motion but also when the legs collide with the ground. therefore, employing low mass, inertia to the dynamic robots is critical for reducing energy loss caused by interaction between robot and environment. 
 
+---
 
+## Conclusion
+In conclusion, understanding of the energy flow diagram is a crucial step for designing actuators. Based on these insights, Next version of my robotic actuator for dynamic robots will be designed minimizing the energy-losses mechanism employing high torque density EM motor, low impedance in transmissions and low inertia leg for future dynamic locomotive robots. 
+
+---
+## Reference
+Citation: Seok, Sangok et al. “Design Principles for Energy-Efficient Legged Locomotion andImplementation on the MIT Cheetah Robot.” IEEE/ASME Transactions on Mechatronics 20.3(2015): 1117–1129.
+
+publication: http://dx.doi.org/10.1109/TMECH.2014.2339013
+
+And It's open access article in DSpace@MIT!

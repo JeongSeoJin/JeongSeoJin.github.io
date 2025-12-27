@@ -30,7 +30,7 @@ I was particularly impressed by the intuitive analysis of the **energy flow cycl
 
 It ultimately uses the **Cost of Transport ($CoT = \frac{power}{weight \times velocity}$)** as a key metric to evaluate the total energy efficiency of the locomotive system.
 
-![figure1](figure1.png)
+<td><img src="figure1.png" width="400" alt="Actuator image 1" /></td>
 
 ## Key Contributions
 - **Energy Analysis** : effectively reduced energy loss based on energy flow of the entire locomotive system. 
@@ -45,11 +45,11 @@ This paper was perfect resource to bridge that gap. It clearly organizes the pri
 
 ## Critical Thinking & Takeaway
 
-### Energy Flow Diagram
+#### 1. Energy Flow Diagram
 ![figure2](figure2.png)
 Through above energy flow diagram in locomotion, I could analyze what exactly causes the energy loss in my actuator. 
 
-### High Torque Density Motor(Large Gap Radius Motor)
+#### 2. High Torque Density Motor(Large Gap Radius Motor)
 the electromagnetic(EM) motors with high-torque density minimize energy loss in actuators. Torque Density($\frac{torque}{mass}$) directly concerns the Joule heating of the EM motor by reducing the required electric current to provide torque. 
 
 Continuous torque of the motor represents how much torque
@@ -79,15 +79,22 @@ Then to get a same torque, required current halved compared to the baseline. The
 | **Joule Heating Loss ($E_j$)**<br><small></small> | $P_{loss}$ | $\frac{1}{4} P_{loss}$ | Heating scales with current squared<br>$(\frac{1}{2})^2 = \frac{1}{4}$ |
 | **Reduction in Heat Loss** | - | **75% reduction** | $100\% - 25\% = \mathbf{75\%}$ **saved** |
 
-Consequently, increasing the torque density of the EM motor is highly desirable for efficiency.
+Consequently, increasing the torque density of the EM motor is highly desirable for efficiency reducing Joule Heating Loss($E_j$)
 
-So How can we get a high torque density EM motors?
+Then, How can we get a high torque density EM motors? The torque density of the motor can be improved by increasing the gap radius: the radius of the gap between the motor stator
+windings and the permanent magnets on the rotor.
 
-### Energy Regeration
+The torque density scales by approximately $\frac{\tau}{m} \propto r_{gap}$, the torque per inertia scales by $\frac{\tau}{J} \propto r_{gap}^{-1}$, and the torque
+squared per electric power, also known as motor constant
+square, a measure of torque production efficiency, scales by $\tau^2/I^2R = K^2_M \propto r_{gap}^3$. the results will favor the motor with the larger gap radius because it will have a smaller gear ratio and fewer gear-train stages; this results in less friction loss, higher torque density, and higher bandwidth.
+<td><img src="figure5.png" width="400" alt="Figure5" /></td>
 
-### Low Impedance Mechanical Transmission(low gear ratio transmission)
+#### 3. Low Impedance Mechanical Transmission(low gear ratio transmission)
+Employing gears significantly reduces the torque demands on the motors while increasing torque density and reducing Joule Heating Loss($E_j$). However, employing gears increase mechanical impedance like reflected inertia, reflected damping and gear friction while reducing back drivability, transmission transparency, efficiency and Transmission Loss($E_f$) . Futher more, it may limit the control of the robot dynamics.
+
+To minimize the lossess($E_f$) associated with employment of gears, the low number of gear stages are ineviatble especially in planetary gear which accumulate backlash stage after stage. And relatively low ratio reduces the contribution of reflected actuator dynamics on the mechanical impedance of the transmission. Therefore, low gear ratio is essential for efficient actuator design and the control for the dynamic robots
 
 
-![figure5](figure5.png)
+#### 4. Energy Regeneration
 
 

@@ -106,12 +106,13 @@ Low Inertia Leg is especially cruicial for dynamic locomotion, such as  higher s
 ---
 
 ## Conclusion
-In conclusion, understanding of the energy flow diagram is a crucial step for designing actuators. Based on these insights, Next version of my robotic actuator for dynamic robots will be designed minimizing the energy-losses mechanism employing high torque density EM motor, low impedance in transmissions and low inertia leg for future dynamic locomotive robots. 
+In conclusion, understanding of the energy flow diagram is a crucial step for designing actuators. Based on these insights, Next version of my robotic actuator for dynamic robots will be designed minimizing the energy-losses mechanism employing high torque densit y EM motor, low impedance in transmissions and low inertia leg for future dynamic locomotive robots. 
 
 ---
 ## Reference
-Citation: Seok, Sangok et al. “Design Principles for Energy-Efficient Legged Locomotion andImplementation on the MIT Cheetah Robot.” IEEE/ASME Transactions on Mechatronics 20.3(2015): 1117–1129.
+**Citation**: Seok, Sangok et al. “Design Principles for Energy-Efficient Legged Locomotion andImplementation on the MIT Cheetah Robot.” IEEE/ASME Transactions on Mechatronics 20.3(2015): 1117–1129.
 
-publication: http://dx.doi.org/10.1109/TMECH.2014.2339013
+**Publication**: http://dx.doi.org/10.1109/TMECH.2014.2339013
 
-And It's open access article in DSpace@MIT!
+**NOTE:**
+And this article is available as a open access article in **DSpace@MIT**!

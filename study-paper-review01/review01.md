@@ -26,7 +26,7 @@ I was particularly impressed by the intuitive analysis of the **energy flow cycl
 
 - **High Torque Density Motor**
 - **Energy Regenerative Electronic System**
-- **Low Impedance Transmission(Back Drivability**
+- **Low Impedance Transmission(Back Drivability)**
 - **Low Inertia Leg**
 
 It ultimately uses the **Cost of Transport ($CoT = \frac{power}{weight \times velocity}$)** as a key metric to evaluate the total energy efficiency of the locomotive system.

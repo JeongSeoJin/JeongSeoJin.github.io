@@ -11,7 +11,7 @@ permalink: /studies/
 * **Keywards:** Electromagnetic Motor, Torque Density, Energy Efficiency, Mechanical Impedance, Transmission, Back Drivability
 
 ### [Paper Review : "Demonstrating Berkeley Humanoid Lite: An Open-source, Accessible, and Customizable 3D-printed Humanoid Robot"](/study-paper-review02/review02.md)
-**2025.12.28**
+**2025.12.29**
 
-> **focusing on low-cost 3d-printed actuator & actuator evaluation with some extent of zero-shot policy transfer from sim to hardware**
+> **focusing on overall humanoid robot design with low-cost 3d-printed actuator, actuator evaluation and zero-shot policy transfer from sim to hardware**
 * **Keywards:** BLDC Motor, Cycloidal Gear, Low Cost, 3D-Printed Actuator, Zero-Shot Policy

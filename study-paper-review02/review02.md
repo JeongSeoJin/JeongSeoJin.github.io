@@ -23,23 +23,25 @@ This paper demonstrates accessible 3d-printed low-cost humanoid robot promoting 
     </tr>
   </table>
 
+---
 ## Key Contributions
 - Low Cost Accessible Modular 3d-printed actuator
-- Reliable Actuator Evaluation
+- Actuator Evaluation of 3d-printed actuator
 - Zero-shot policy transfer from simulation to hardware
 
+---
 ## Background of why I read this paper
-This paper deals with 'low-cost', '3d-printed', 'modular actuator', 'zero-shot policy'. These properties are crucial for me planning to build humanoid robot in the near future. The robot has to be reliable for successful experiment of Reinforcement Learning(RL) in locomotion even it's based on low-cost 3d-printed actuator. Also It should be replaceable quickly to accelerate experiments.
+This paper deals with 'low-cost', '3d-printed', 'modular actuator', 'zero-shot policy'. These properties are crucial to me for planning to build humanoid robot in the near future. The robot has to be reliable for successful experiment of Reinforcement Learning(RL) in locomotion even it's based on low-cost 3d-printed actuator. Also It should be replaceable quickly to accelerate experiments.
 
 I'm now focusing on building reliable robotic actuator to employ reinforcement learning successfully. In my prvious project, I have not conducted evaluation yet. Thus this paper is suitable for me, offering insights not only into actuator evaluation methods but also deploying reinforcement learning model on my assembled robots in future.
 
-
+---
 ## Critical Thinking & Takeaway
 #### 1. Accessible Low-Cost Actuator
 The actuators are two different size(6512, 5010). As you can see below figures, It's relatively low cost compared to other metalic actuators. For example, 6512 actuator uses M6C12 150KV BLDC drone motor from MAD Components, as5600 encoder and B-G431B-ESC1 as a motor driver. The reducer, and housing parts are all 3d printed with PLA. The cycloidal gears are opted as reducer owing to it's high robustness. 
 
 <table>
-  <caption>BOM and Controller Components</caption>
+  <caption>BOM & B-G431B-ESC1 Controller</caption>
   <tr>
     <td><img src="BOM.png" width="250" alt="Actuator image 1" /></td>
     <td><img src="controller.png" width="300" alt="Actuator image 2" /></td>
@@ -47,14 +49,14 @@ The actuators are two different size(6512, 5010). As you can see below figures, 
 </table>
 
 <table>
-  <caption>Encoder and Motor Components</caption>
+  <caption>as5600 Encoder & M6C12 150KV Motor</caption>
   <tr>
     <td><img src="encoder.png" width="250" alt="Actuator image 1" /></td>
     <td><img src="motor.png" width="300" alt="Actuator image 2" /></td>
   </tr>
 </table>
 
-<caption>M6C12 150kv BLDC Drone Motor Specification</caption>
+<caption>Specification of 'M6C12 150kv BLDC Drone Motor'</caption>
 <td><img src="specification.png" width="600" alt="Actuator image 2" /></td>
 
 As you can see in the motor specification figure,
@@ -110,24 +112,48 @@ This dynamometer method is suitable for strict evaluation seperating mechanical 
 #### 3. Actuator Evaluation - Transmission stiffness
 <td><img src="fig9.png" width="600" alt="Actuator image 2" /></td>
 
-The actuator’s transmission stiffness measured by rigidly fixing the output shaft relative to the actuator housing and measuring motor displacement under a range of static torques. 
+The actuator’s transmission stiffness is measured by rigidly fixing the output shaft relative to the actuator housing and measuring motor displacement under a range of static torques. 
 
 The torque command was gradually ramped from 0 Nm to 20 Nm and back in both directions. A linear fit was then applied to the data collected from 4 Nm to 10 Nm, and the inverse of the slope yielded a stiffness of approximately 319.49 Nm/rad (Figure 9). The transmission stiffness can be compensated by opting alternative materials(e.g PA-CF).
 
-#### 4. Actuator Evaluation - Durability
+#### 4. Actuator - durability 
+Durability is a primary consideration of 3d-printed actuator. The experiment was conducted for 60-hours lifting a pendulum(0.5kg, 0.5m) through range of -45 degrees to 90 degrees at a frequency of 0.5Hz. Consequently, efficiency and backlash remained within acceptable limits throughout the 60-hours test. The durability is remarkable especially considering cycloidal gear thickness is only 4mm. This finding gives me confidence in my own project, as my actuator design shares similar gear dimensions.
 
+<td><img src="fig10.png" width="600" alt="Actuator image 2" /></td>
+
+#### 5. Legged Locomotion
+This paper achieve a direct sim-to-real transfer of a Isaac Gym-trained policy to the physical robot without relying on additional state estimation methods. This is crucial for locomotive robot using 3d printed actuator which causes backlash. The authors formulate the locomotion task as a Partially Observed Markov Decision Process(POMDP) and use a standard Proximal Policy Optimization(PPO) algorithm to learn a control policy
+
+proprioceptive observations from the robot hardware:
+
+- the base angular velocity 
+- the projected gravity vector 
+- joint positions and velocites
+
+Additional inputs include the commanded linear volocity provided by the user and the previous time-step action. Notably, the experiement utilized only 30% of the actuator's torque limit, suggesting that the actuators are operating well within their capacity. 
+
+#### Additional Insights
+Based on the specifications of the 6512 motor (2.64 Nm) and a gear ratio of 15:1 with an estimated efficiency of 90%, the theoretical maximum torque is approximately 35.64 Nm.
+
+However, in this experimental setup, I estimate the practical maximum torque to be restricted to around 20–24 Nm. While the input voltage is 24V (compared to the motor's rated 48V), the primary limiting factor is likely a software-imposed current limit designed to protect the 3D-printed plastic gears from structural failure, rather than the motor's raw capability.
+
+---
 ## Conclusion
+This paper validates that the low-cost 3d-printed actuator with zero-shot transfer policy is suitable for humanoid robot platform, evaluating actuator's reliability. Especially the overall building/evaluation process of humanoid robot is remarkable, including actuator designs/evaluations and Reinforcement Learning deployment. Furthermore, '[Berkeley Humanoid Lite Docs](https://berkeley-humanoid-lite.gitbook.io/docs)' deals with the specific contents of building this humanoid robot. Building the full humanoid robot with 3d-printed actuator, deploying the RL model on the robot, make me encourage and confident alot.  
 
 ---
 ## Reference
-**Citation**: 
+**Citation**: https://arxiv.org/pdf/2504.17249
 
-**Publication**: 
+**NOTE:** This paper is available as an open-access paper
 
-**NOTE:**
+Berkeley Humanoid Lite Docs : [https://berkeley-humanoid-lite.gitbook.io/docs](https://berkeley-humanoid-lite.gitbook.io/docs)
 
-[Controller](https://www.st.com/en/evaluation-tools/b-g431b-esc1.html)
+---
+## Image Sources
 
-[Motor and Motor specification](https://store.mad-motor.com/products/mad-m6c12-eee-brushless-motor-for-the-long-flight-time-multirotor-hexacopter-octopter?srsltid=AfmBOopSIaIIfPpFTQoUzMsGxo3gZUvFAoL8lv4r6elfjP7InwBlftJ5)
+[Controller image](https://www.st.com/en/evaluation-tools/b-g431b-esc1.html)
 
-[Encder](https://www.tinytronics.nl/en/sensors/magnetic-field/as5600-magnetic-angle-sensor-encoder-module)
+[Motor and Motor specification image](https://store.mad-motor.com/products/mad-m6c12-eee-brushless-motor-for-the-long-flight-time-multirotor-hexacopter-octopter?srsltid=AfmBOopSIaIIfPpFTQoUzMsGxo3gZUvFAoL8lv4r6elfjP7InwBlftJ5)
+
+[Encoder image](https://www.tinytronics.nl/en/sensors/magnetic-field/as5600-magnetic-angle-sensor-encoder-module)

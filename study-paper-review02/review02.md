@@ -143,7 +143,7 @@ This paper presents that the low-cost 3d-printed actuator with zero-shot transfe
 
 ---
 ## Reference
-**Citation**: https://arxiv.org/pdf/2504.17249
+**Citation**: [https://arxiv.org/pdf/2504.17249](https://arxiv.org/pdf/2504.17249)
 
 **NOTE:** This paper is available as an open-access paper
 

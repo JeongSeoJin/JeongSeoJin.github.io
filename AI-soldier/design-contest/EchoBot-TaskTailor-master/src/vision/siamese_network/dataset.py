@@ -41,7 +41,7 @@ class Dataset(torch.utils.data.IterableDataset):
                 transforms.RandomHorizontalFlip(p=0.5),
                 transforms.ToTensor(),
                 transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-                transforms.Resize(self.feed_shape[1:])
+                transforms.Resize(self.feed_shape[1:])  
             ])
         else:
             self.transform = transforms.Compose([

@@ -15,12 +15,14 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>JeongSeoJin</p>
-      <p>Mechanical Engineering Student in Korea</p>
+      <p>Mechanical Engineering Student</p>
+      <p>Seoul, Korea</p>
   - align: left
     image: profile-image.png
     content: about_me.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>JeongSeoJin</p>
-      <p>Mechanical Engineering Student in Korea</p>
+      <p>Mechanical Engineering Student</p>
+      <p>Seoul, Korea</p>
 ---

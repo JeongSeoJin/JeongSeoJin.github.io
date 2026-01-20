@@ -5,22 +5,13 @@ date: 2025-12-23 10:14:00
 description: This design is inspired by MIT mini cheetah
 tags: Robotic QDD Actuator
 categories: Project
+thumbnail: assets/img/c-qdd-actuator/image_4.jpg
 giscus_comments: true
 related_posts: true
 toc:
   sidebar: left
 ---
 
-This post shows how to add a table of contents as a sidebar.
-
-## Adding a Table of Contents
-
-To add a table of contents to a post as a sidebar, simply add
-
-```yml
-toc:
-  sidebar: left
-```
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -35,7 +26,7 @@ toc:
   });
 </script>
 
-<td><img src="assets/img/c-qdd-actuator/image_4.jpg" width="600" alt="Actuator image 2" /></td>
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image_4.jpg" width="600" alt="Actuator image 2" %}
 
 # Cycloidal QDD Actuator for Dynamic Robots
 

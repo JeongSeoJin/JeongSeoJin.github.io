@@ -91,7 +91,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Robotics # blog_name will be displayed in your blog page
-blog_description: my own robotic projects and studies # blog_description will be displayed in your blog page
+blog_description: my own robotics projects and studies # blog_description will be displayed in your blog page
 blog_author: SeoJin Jeong # blog_author will be displayed in your blog page
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts

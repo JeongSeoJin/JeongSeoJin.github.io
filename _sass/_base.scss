@@ -415,12 +415,12 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 1.2rem;
-    line-height: 2;
+    font-size: 0.95rem;
+    line-height: 1.5;
 
     a {
       display: inline-block;
-      margin: 0 1rem;
+      margin: 0 0.8rem;
       color: var(--global-text-color);
       text-decoration: none;
       transition-property: all 0.2s ease-in-out;

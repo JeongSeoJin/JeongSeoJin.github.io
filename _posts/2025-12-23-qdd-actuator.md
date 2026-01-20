@@ -1,13 +1,68 @@
 ---
-layout: post
+layout: distill
 title: A Cycloidal Quasi-Direct Drive Actuator Design, Fabrication and Control
-date: 2025-12-23 00:12:21
 description: this design is inspired by MIT mini cheetah
-tags: formatting images
-categories: sample-posts
+tags: QDD Actuator
+giscus_comments: true
+date: 2025-12-23
 thumbnail: assets/img/c-qdd-actuator-thumbnail.jpg
----
+featured: true
+mermaid:
+  enabled: true
+  zoomable: true
+code_diff: true
+map: true
+chart:
+  chartjs: true
+  echarts: true
+  vega_lite: true
+tikzjax: true
+typograms: true
 
+authors:
+  - name: Jeong SeoJin
+    affiliations:
+
+bibliography:
+
+# Optionally, you can add a table of contents to your post.
+# NOTES:
+#   - make sure that TOC names match the actual section names
+#     for hyperlinks within the post to work correctly.
+#   - we may want to automate TOC generation in the future using
+#     jekyll-toc plugin (https://github.com/toshimaru/jekyll-toc).
+toc:
+    # if a section has subsections, you can add them as follows:
+    # subsections:
+    #   - name: Example Child Subsection 1
+    #   - name: Example Child Subsection 2
+  - name: Abstract
+  - name: Actuator Design:Why Cycloidal QDD Actuator?
+  - name: System Architecture & Components
+  - name: Assembly
+  - name: Control & Validation
+  - name: Limitations & Future Works
+  - name: Credits
+  - name: References
+  - 
+# Below is an example of injecting additional post-specific styles.
+# If you use this post as a template, delete this _styles block.
+_styles: >
+  .fake-img {
+    background: #bbb;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+  }
+  .fake-img p {
+    font-family: monospace;
+    color: white;
+    text-align: left;
+    margin: 12px 0;
+    text-align: center;
+    font-size: 16px;
+  }
+---
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">

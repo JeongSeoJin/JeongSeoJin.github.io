@@ -1,0 +1,33 @@
+<!-- Social links with text format instead of icons -->
+{% assign socials = site.data.socials %}
+
+<div class="custom-social-links">
+  {% for social in socials %}
+    {% case social[0] %}
+      {% when 'cv_pdf' %}
+        <a href="{{ social[1] }}" title="CV PDF">CV</a>
+      {% when 'email' %}
+        <a href="mailto:{{ social[1] }}" title="Email">Email</a>
+      {% when 'github_username' %}
+        <a href="https://github.com/{{ social[1] }}" title="GitHub">GitHub</a>
+      {% when 'linkedin_username' %}
+        <a href="https://linkedin.com/in/{{ social[1] }}" title="LinkedIn">LinkedIn</a>
+      {% when 'twitter_username' %}
+        <a href="https://twitter.com/{{ social[1] }}" title="Twitter">Twitter</a>
+      {% when 'instagram_id' %}
+        <a href="https://instagram.com/{{ social[1] }}" title="Instagram">Instagram</a>
+      {% when 'youtube_id' %}
+        <a href="https://youtube.com/@{{ social[1] }}" title="YouTube">YouTube</a>
+      {% when 'scholar_userid' %}
+        <a href="https://scholar.google.com/citations?user={{ social[1] }}" title="Google Scholar">Google Scholar</a>
+      {% when 'custom_social' %}
+        <a href="{{ social[1].url }}" title="{{ social[1].title }}">{{ social[1].title }}</a>
+      {% when 'rss_icon' %}
+        {% if social[1] == true %}
+          <a href="{{ '/feed.xml' | relative_url }}" title="RSS Feed">RSS</a>
+        {% endif %}
+      {% when 'inspirehep_id' %}
+        <a href="https://inspirehep.net/authors/{{ social[1] }}" title="Inspire HEP">Inspire HEP</a>
+    {% endcase %}
+  {% endfor %}
+</div>

@@ -415,39 +415,44 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 1.2rem;
+    line-height: 2;
 
     a {
-      img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
-      }
-
-      svg {
-        width: 3.5rem;
-        height: 4rem;
-        margin-bottom: 0.5rem;
-
-        image {
-          width: 3.5rem;
-          height: 3.5rem;
-        }
-      }
-
-      i::before {
-        color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
-      }
+      display: inline-block;
+      margin: 0 1rem;
+      color: var(--global-text-color);
+      text-decoration: none;
+      transition-property: all 0.2s ease-in-out;
 
       &:hover {
-        text-decoration: none;
-
-        i::before {
-          color: var(--global-theme-color);
-        }
+        color: var(--global-theme-color);
+        text-decoration: underline;
       }
     }
+
+    img {
+      width: 3.2rem;
+      height: 3.2rem;
+      margin-bottom: 1rem;
+    }
+
+    svg {
+      width: 3.5rem;
+      height: 4rem;
+      margin-bottom: 0.5rem;
+
+      image {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    }
+
+    i::before {
+      color: var(--global-text-color);
+      transition-property: all 0.2s ease-in-out;
+    }
+
   }
 
   .contact-note {

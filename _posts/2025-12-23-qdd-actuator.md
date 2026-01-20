@@ -26,7 +26,7 @@ toc:
   });
 </script>
 
-{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image_4.jpg" width="600" alt="Actuator image 2" %}
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image_4.jpg" width="100%" max-width="600px" alt="Actuator image 2" %}
 
 # Cycloidal QDD Actuator for Dynamic Robots
 

@@ -93,8 +93,9 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Robotics Project and Study # blog_name will be displayed in your blog page
+blog_description: My own robotic projects and study. # blog_description will be displayed in your blog page
+blog_author: SeoJin Jeong # blog_author will be displayed in your blog page
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

@@ -272,7 +272,7 @@ jekyll-archives:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
 display_tags: ["Actuator", "Reinforcement Learning", "Control"] # these tags will be displayed on the front page of your blog
-display_categories: ["projects", "paper reviews"] # these categories will be displayed on the front page of your blog
+display_categories: ["project", "paper review"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

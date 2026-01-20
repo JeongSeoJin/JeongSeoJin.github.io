@@ -10,8 +10,8 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Department of Mechanical Engineering</p>
-    <p>University of Dongguk</p>
-    <p>Seoul, Korea</p>
+    <p>Dongguk University</p>
+    <p>30 Pildong-ro 1-gil, Jung-gu, Seoul 04620, Korea</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page

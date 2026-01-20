@@ -106,12 +106,9 @@ To maximize efficiency, I integrated rollers into the output pins. Unlike simple
 
 For the current prototype, the gears, shafts and rotor are manufactured from CNC-machined Aluminum to verify the design with a high strength-to-weight ratio. (Note: The final goal of this project is to optimize the design for a fully 3D-printed, low-cost actuator for dynamic robots.)
 
-  <table>
-    <tr>
-      <td><img src="assets/img/c-qdd-actuator/image_2.jpg" width="300" alt="Actuator image 1" /></td>
-      <td><img src="assets/img/c-qdd-actuator/image4.png" width="300" alt="Actuator image 2" /></td>
-    </tr>
-  </table>
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image_2.jpg" width="100%" max-width="300px" alt="Actuator image 1" %}
+
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image4.png" width="100%" max-width="300px" alt="Actuator image 2" %}
 
 ### 3.2 Electromagnetic Design (Custom BLDC)
 
@@ -128,7 +125,7 @@ For precise torque control and dynamic response, I integrated the **Moteus-c1 co
 
 It implements **Field Oriented Control (FOC)**, which is essential for smooth torque generation and the proprioceptive capabilities mentioned earlier. With a wide input range (10-51V) and 20A peak phase current, it provides sufficient power capacity to drive the custom-wound 8110 stator to its full potential.
 
-<img src="assets/img/c-qdd-actuator/controller.webp" width="250" alt="Actuator image 2" />
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/controller.webp" width="100%" max-width="250px" alt="Actuator image 2" %}
 ---
 
 ## 4. Assembly

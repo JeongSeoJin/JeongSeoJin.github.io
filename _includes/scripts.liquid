@@ -168,11 +168,6 @@
   <script defer src="{{ '/assets/js/zoom.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
-{% if page.toc and page.toc.sidebar %}
-  <!-- Sidebar Table of Contents -->
-  <script defer src="{{ '/assets/js/bootstrap-toc.min.js' | relative_url | bust_file_cache }}"></script>
-{% endif %}
-
 {% if page.pretty_table %}
   <!-- Bootstrap Table -->
   <!-- Bootstrap Table doesn't go well with diff2html -->
@@ -186,6 +181,12 @@
 
 <!-- Load Common JS -->
 <script src="{{ '/assets/js/no_defer.js' | relative_url | bust_file_cache }}"></script>
+
+{% if page.toc and page.toc.sidebar %}
+  <!-- Sidebar Table of Contents - must be loaded before common.js -->
+  <script defer src="{{ '/assets/js/bootstrap-toc.min.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}
+
 <script defer src="{{ '/assets/js/common.js' | relative_url | bust_file_cache }}"></script>
 <script defer src="{{ '/assets/js/copy_code.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
 

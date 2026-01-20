@@ -3,10 +3,13 @@
 {% endcapture %}
 
 
+{% comment %} 
 {% if site.footer_fixed %}
   <footer class="fixed-bottom" role="contentinfo">
     <div class="container mt-0">
       {% if site.enable_footer_social %}
+        <hr>
+        {% include custom_social_links.liquid %}
         <br>
         {{ site.footer_message }}
         <hr>
@@ -14,4 +17,4 @@
       {{ footer_contents }}
     </div>
   </footer>
-{% endif %}
+{% endif %} {% endcomment %}

@@ -1,80 +1,26 @@
 ---
-layout: distill
+layout: post
 title: A Cycloidal Quasi-Direct Drive Actuator Design, Fabrication and Control
-description: this design is inspired by MIT mini cheetah
-tags: QDD Actuator
+date: 2025-12-23 10:14:00
+description: This design is inspired by MIT mini cheetah
+tags: Robotic QDD Actuator
+categories: Project
 giscus_comments: true
-date: 2025-12-23
-thumbnail: assets/img/c-qdd-actuator-thumbnail.jpg
-featured: true
-mermaid:
-  enabled: true
-  zoomable: true
-code_diff: true
-map: true
-chart:
-  chartjs: true
-  echarts: true
-  vega_lite: true
-tikzjax: true
-typograms: true
-
-authors:
-  - name: Jeong SeoJin
-
-# Optionally, you can add a table of contents to your post.
-# NOTES:
-#   - make sure that TOC names match the actual section names
-#     for hyperlinks within the post to work correctly.
-#   - we may want to automate TOC generation in the future using
-#     jekyll-toc plugin (https://github.com/toshimaru/jekyll-toc).
+related_posts: true
 toc:
-    # if a section has subsections, you can add them as follows:
-    # subsections:
-    #   - name: Example Child Subsection 1
-    #   - name: Example Child Subsection 2
-  - name: 1. Abstract
-  - name: 2. Actuator Design:Why Cycloidal QDD Actuator?
-  - subsections:
-      - name: 2.1 The Limitations of Traditional Actuators
-      - name: 2.2 The QDD System Solution
-      - name: 2.3 Motor Design Optimization
-      - name: 2.4 Transmission Selection: Why Cycloidal Reducer?
-  - name: 3. System Architecture & Components
-  - subsections:
-    - name: 3.1 Mechanical Design (Cycloidal Reducer)
-    - name: 3.2 Electromagnetic Design (Custom BLDC)
-    - name: 3.3 Electronics & Sensors
-  - name: 4. Assembly
-  - subsections:
-    - name: 4.1 Bearing Installation & Fits
-    - name: 4.2 Output Mechanism
-  - name: 5. Control & Validation
-  - name: 6. Limitations & Future Works
-  - subsections:
-    - name: 6.1 Limitations of the Current Prototype
-    - name: 6.2 Future Works
-  - name: 7. Credits
-  - name: 8. References
-  - 
-# Below is an example of injecting additional post-specific styles.
-# If you use this post as a template, delete this _styles block.
-_styles: >
-  .fake-img {
-    background: #bbb;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 12px;
-  }
-  .fake-img p {
-    font-family: monospace;
-    color: white;
-    text-align: left;
-    margin: 12px 0;
-    text-align: center;
-    font-size: 16px;
-  }
+  sidebar: left
 ---
+
+This post shows how to add a table of contents as a sidebar.
+
+## Adding a Table of Contents
+
+To add a table of contents to a post as a sidebar, simply add
+
+```yml
+toc:
+  sidebar: left
+```
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -96,17 +42,6 @@ _styles: >
 > *Note: This is an ongoing project. Please note that some sections, particularly '5. Control & Validation', are currently being documented. New test results and updates will be uploaded soon.*
 
 [=> view this page in github with resources](https://github.com/JeongSeoJin/quasi-direct-drive-actuator)
-
-Table of contents
-
-- [1. Abstract](#1-abstract)
-- [2. Actuator Design : Why Cycloidal QDD Actuator?](#2-actuator-design-why-qdd-actuator)
-- [3. System Architecture & Components](#3-system-architecture--components)
-- [4. Assembly](#4-assembly)
-- [5. Control & Validation](#5-control--validation)
-- [6. Limitations & Future Works](#6-limitations--future-works)
-- [7. Credits](#7-credits)
-- [8. References](#8-references)
 
 ---
 

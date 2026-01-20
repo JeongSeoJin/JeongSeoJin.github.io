@@ -43,13 +43,9 @@ Traditional high-ratio gearboxes suffer from poor back-drivability, low responsi
 
 The current prototype utilizes a 3D-printed and aluminium structure to ensure low cost and accessibility. Preliminary assessments estimate a maximum holding torque exceeding 7 Nm, with comprehensive performance verification currently underway. This work contributes to the robotic community by providing a scalable, affordable, and high-performance actuation solution.
 
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image_1.jpg" width="100%" max-width="300px" alt="Actuator image 1" %}
 
-  <table>
-    <tr>
-      <td><img src="assets/img/c-qdd-actuator/image_1.jpg" width="300" alt="Actuator image 1" /></td>
-      <td><img src="assets/img/c-qdd-actuator/image1.png" width="300" alt="Actuator image 2" /></td>
-    </tr>
-  </table>
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image1.png" width="100%" max-width="300px" alt="Actuator image 2" %}
 
 ---
 

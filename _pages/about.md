@@ -11,7 +11,7 @@ profile:
   more_info: >
     <p>Department of Mechanical Engineering</p>
     <p>Dongguk University</p>
-    <p>30 Pildong-ro 1-gil, Jung-gu, Seoul 04620, Korea</p>
+    <p>Seoul, Korea</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page

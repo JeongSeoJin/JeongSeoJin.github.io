@@ -9,6 +9,8 @@
   {% if site.last_updated %}
     Last updated: {{ 'now' | date: '%B %d, %Y' }}.
   {% endif %}
+  <br>
+  &copy; Copyright 2026 SeoJin Jeong. Powered by Jekyll with al-folio theme. Hosted by GitHub Pages.
 {% endcapture %}
 
 {% if site.footer_fixed %}
@@ -23,10 +25,6 @@
   </footer>
 {% else %}
   <footer class="sticky-bottom mt-5" role="contentinfo">
-    {% if site.newsletter.enabled %}
-      {% include newsletter.liquid %}
-    {% endif %}
-
     <div class="container">
       {{ footer_contents }}
       {% if site.enable_footer_social %}

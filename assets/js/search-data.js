@@ -37,15 +37,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-a-cycloidal-quasi-direct-drive-actuator-design-fabrication-and-control",
+        },{id: "post-",
         
-          title: "A Cycloidal Quasi-Direct Drive Actuator Design, Fabrication and Control",
+          title: "",
         
-        description: "this design is inspired by MIT mini cheetah",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/qdd-actuator/";
+            window.location.href = "/blog/2026/2025-12-23-qdd-actuator/";
           
         },
       },{id: "post-a-post-with-plotly-js",

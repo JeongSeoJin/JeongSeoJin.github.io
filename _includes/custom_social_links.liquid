@@ -5,29 +5,29 @@
   {% for social in socials %}
     {% case social[0] %}
       {% when 'cv_pdf' %}
-        <a href="{{ social[1] }}" title="CV PDF">CV</a>
+        <a href="{{ social[1] }}" title="CV PDF">CV</a>&nbsp;
       {% when 'email' %}
-        <a href="mailto:{{ social[1] }}" title="{{ social[1] }}">{{ social[1] }}</a>
+        <a href="mailto:{{ social[1] }}" title="{{ social[1] }}">{{ social[1] }}</a>&nbsp;
       {% when 'github_username' %}
-        <a href="https://github.com/{{ social[1] }}" title="GitHub">GitHub</a>
+        <a href="https://github.com/{{ social[1] }}" title="GitHub">GitHub</a>&nbsp;
       {% when 'linkedin_username' %}
-        <a href="https://linkedin.com/in/{{ social[1] }}" title="LinkedIn">LinkedIn</a>
+        <a href="https://linkedin.com/in/{{ social[1] }}" title="LinkedIn">LinkedIn</a>&nbsp;
       {% when 'twitter_username' %}
-        <a href="https://twitter.com/{{ social[1] }}" title="Twitter">Twitter</a>
+        <a href="https://twitter.com/{{ social[1] }}" title="Twitter">Twitter</a>&nbsp;
       {% when 'instagram_id' %}
-        <a href="https://instagram.com/{{ social[1] }}" title="Instagram">Instagram</a>
+        <a href="https://instagram.com/{{ social[1] }}" title="Instagram">Instagram</a>&nbsp;
       {% when 'youtube_id' %}
-        <a href="https://youtube.com/@{{ social[1] }}" title="YouTube">YouTube</a>
+        <a href="https://youtube.com/@{{ social[1] }}" title="YouTube">YouTube</a>&nbsp;
       {% when 'scholar_userid' %}
-        <a href="https://scholar.google.com/citations?user={{ social[1] }}" title="Google Scholar">Google Scholar</a>
+        <a href="https://scholar.google.com/citations?user={{ social[1] }}" title="Google Scholar">Google Scholar</a>&nbsp;
       {% when 'custom_social' %}
-        <a href="{{ social[1].url }}" title="{{ social[1].title }}">{{ social[1].title }}</a>
+        <a href="{{ social[1].url }}" title="{{ social[1].title }}">{{ social[1].title }}</a>&nbsp;
       {% when 'rss_icon' %}
         {% if social[1] == true %}
-          <a href="{{ '/feed.xml' | relative_url }}" title="RSS Feed">RSS</a>
+          <a href="{{ '/feed.xml' | relative_url }}" title="RSS Feed">RSS</a>&nbsp;
         {% endif %}
       {% when 'inspirehep_id' %}
-        <a href="https://inspirehep.net/authors/{{ social[1] }}" title="Inspire HEP">Inspire HEP</a>
+        <a href="https://inspirehep.net/authors/{{ social[1] }}" title="Inspire HEP">Inspire HEP</a>&nbsp;
     {% endcase %}
   {% endfor %}
 </div>

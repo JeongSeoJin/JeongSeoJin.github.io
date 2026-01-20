@@ -15,4 +15,17 @@
       {{ footer_contents }}
     </div>
   </footer>
+{% else %}
+  <footer class="sticky-bottom mt-5" role="contentinfo">
+    <div class="container">
+      {% if site.enable_footer_social %}
+        <hr>
+        {% include custom_social_links.liquid %}
+        <br>
+        {{ site.footer_message }}
+        <hr>
+      {% endif %}
+      {{ footer_contents }}
+    </div>
+  </footer>
 {% endif %}

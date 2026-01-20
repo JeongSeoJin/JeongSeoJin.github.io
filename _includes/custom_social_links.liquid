@@ -7,7 +7,7 @@
       {% when 'cv_pdf' %}
         <a href="{{ social[1] }}" title="CV PDF">CV</a>
       {% when 'email' %}
-        <a href="mailto:{{ social[1] }}" title="Email">Email</a>
+        <a href="mailto:{{ social[1] }}" title="{{ social[1] }}">{{ social[1] }}</a>
       {% when 'github_username' %}
         <a href="https://github.com/{{ social[1] }}" title="GitHub">GitHub</a>
       {% when 'linkedin_username' %}

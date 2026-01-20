@@ -21,9 +21,6 @@ typograms: true
 
 authors:
   - name: Jeong SeoJin
-    affiliations:
-
-bibliography:
 
 # Optionally, you can add a table of contents to your post.
 # NOTES:
@@ -36,14 +33,29 @@ toc:
     # subsections:
     #   - name: Example Child Subsection 1
     #   - name: Example Child Subsection 2
-  - name: Abstract
-  - name: Actuator Design:Why Cycloidal QDD Actuator?
-  - name: System Architecture & Components
-  - name: Assembly
-  - name: Control & Validation
-  - name: Limitations & Future Works
-  - name: Credits
-  - name: References
+  - name: 1. Abstract
+  - name: 2. Actuator Design:Why Cycloidal QDD Actuator?
+  - subsections:
+      - name: 2.1 The Limitations of Traditional Actuators
+      - name: 2.2 The QDD System Solution
+      - name: 2.3 Motor Design Optimization
+      - name: 2.4 Transmission Selection: Why Cycloidal Reducer?
+  - name: 3. System Architecture & Components
+  - subsections:
+    - name: 3.1 Mechanical Design (Cycloidal Reducer)
+    - name: 3.2 Electromagnetic Design (Custom BLDC)
+    - name: 3.3 Electronics & Sensors
+  - name: 4. Assembly
+  - subsections:
+    - name: 4.1 Bearing Installation & Fits
+    - name: 4.2 Output Mechanism
+  - name: 5. Control & Validation
+  - name: 6. Limitations & Future Works
+  - subsections:
+    - name: 6.1 Limitations of the Current Prototype
+    - name: 6.2 Future Works
+  - name: 7. Credits
+  - name: 8. References
   - 
 # Below is an example of injecting additional post-specific styles.
 # If you use this post as a template, delete this _styles block.
@@ -77,7 +89,7 @@ _styles: >
   });
 </script>
 
-<td><img src="actual-img/image_4.jpg" width="600" alt="Actuator image 2" /></td>
+<td><img src="assets/img/c-qdd-actuator/image_4.jpg" width="600" alt="Actuator image 2" /></td>
 
 # Cycloidal QDD Actuator for Dynamic Robots
 
@@ -108,8 +120,8 @@ The current prototype utilizes a 3D-printed and aluminium structure to ensure lo
 
   <table>
     <tr>
-      <td><img src="actual-img/image_1.jpg" width="300" alt="Actuator image 1" /></td>
-      <td><img src="actual-img/image1.png" width="300" alt="Actuator image 2" /></td>
+      <td><img src="assets/img/c-qdd-actuator/image_1.jpg" width="300" alt="Actuator image 1" /></td>
+      <td><img src="assets/img/c-qdd-actuator/image1.png" width="300" alt="Actuator image 2" /></td>
     </tr>
   </table>
 
@@ -174,8 +186,8 @@ For the current prototype, the gears, shafts and rotor are manufactured from CNC
 
   <table>
     <tr>
-      <td><img src="actual-img/image_2.jpg" width="300" alt="Actuator image 1" /></td>
-      <td><img src="actual-img/image4.png" width="300" alt="Actuator image 2" /></td>
+      <td><img src="assets/img/c-qdd-actuator/image_2.jpg" width="300" alt="Actuator image 1" /></td>
+      <td><img src="assets/img/c-qdd-actuator/image4.png" width="300" alt="Actuator image 2" /></td>
     </tr>
   </table>
 
@@ -194,7 +206,7 @@ For precise torque control and dynamic response, I integrated the **Moteus-c1 co
 
 It implements **Field Oriented Control (FOC)**, which is essential for smooth torque generation and the proprioceptive capabilities mentioned earlier. With a wide input range (10-51V) and 20A peak phase current, it provides sufficient power capacity to drive the custom-wound 8110 stator to its full potential.
 
-<img src="actual-img/controller.webp" width="250" alt="Actuator image 2" />
+<img src="assets/img/c-qdd-actuator/controller.webp" width="250" alt="Actuator image 2" />
 ---
 
 ## 4. Assembly

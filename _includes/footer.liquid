@@ -10,27 +10,7 @@
     Last updated: {{ 'now' | date: '%B %d, %Y' }}.
   {% endif %}
   <br>
-  &copy; Copyright 2026 SeoJin Jeong. Powered by Jekyll with al-folio theme. Hosted by GitHub Pages.
+  &copy; Powered by Jekyll with al-folio theme. Hosted by GitHub Pages.
 {% endcapture %}
 
-{% if site.footer_fixed %}
-  <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
-      {{ footer_contents }}
-      {% if site.enable_footer_social %}
-        <hr>
-        {% include custom_social_links.liquid %}
-      {% endif %}
-    </div>
-  </footer>
-{% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo">
-    <div class="container">
-      {{ footer_contents }}
-      {% if site.enable_footer_social %}
-        <hr>
-        {% include custom_social_links.liquid %}
-      {% endif %}
-    </div>
-  </footer>
-{% endif %}
+

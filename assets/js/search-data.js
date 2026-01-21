@@ -30,15 +30,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-",
+        },{id: "post-paper-review-quot-demonstrating-berkeley-humanoid-lite-an-open-source-accessible-and-customizable-3d-printed-humanoid-robot-quot",
         
-          title: "",
+          title: "Paper Review: &quot;Demonstrating Berkeley Humanoid Lite: An Open-source, Accessible, and Customizable 3D-printed Humanoid...",
         
-        description: "",
+        description: "Focusing on Actuator Design &amp; Evaluation Process",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/2026-01-03-review02/";
+            window.location.href = "/blog/2026/review02/";
           
         },
       },{id: "post-paper-review-quot-design-principles-for-energy-efficient-legged-locomotion-and-implementation-on-the-mit-cheetah-robot-quot",

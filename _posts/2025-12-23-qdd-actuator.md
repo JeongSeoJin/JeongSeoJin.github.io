@@ -4,7 +4,7 @@ title: A Cycloidal Quasi-Direct Drive Actuator Design, Fabrication and Control
 date: 2025-12-23 10:14:00
 description: This design is inspired by MIT mini cheetah
 tags: Robotic QDD Actuator
-categories: Project
+categories: project
 thumbnail: assets/img/c-qdd-actuator/image_4.jpg
 giscus_comments: true
 related_posts: true

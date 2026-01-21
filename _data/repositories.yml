@@ -5,5 +5,5 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - JeongSeoJin/quasi-direct-drive-actuator Public
+  - JeongSeoJin/quasi-direct-drive-actuator
   - JeongSeoJin/robotic-actuators

@@ -49,17 +49,6 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/review03/";
-          
-        },
-      },{id: "post-paper-review-quot-design-principles-for-energy-efficient-legged-locomotion-and-implementation-on-the-mit-cheetah-robot-quot",
-        
-          title: "Paper Review:&quot;Design Principles for Energy Efficient Legged Locomotion and Implementation on the MIT...",
-        
-        description: "Focusing on Actuator Design &amp; Energy Flow Cycle",
-        section: "Posts",
-        handler: () => {
-          
             window.location.href = "/blog/2025/review01/";
           
         },

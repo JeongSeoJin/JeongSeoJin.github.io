@@ -41,6 +41,17 @@ ninja.data = [{
             window.location.href = "/blog/2026/2026-01-03-review02/";
           
         },
+      },{id: "post-",
+        
+          title: "",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/2025-12-29-review03/";
+          
+        },
       },{id: "post-paper-review-quot-design-principles-for-energy-efficient-legged-locomotion-and-implementation-on-the-mit-cheetah-robot-quot",
         
           title: "Paper Review:&quot;Design Principles for Energy Efficient Legged Locomotion and Implementation on the MIT...",

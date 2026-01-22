@@ -278,8 +278,8 @@ display_categories: ["project", "paper"] # these categories will be displayed on
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Jeong]
+  first_name: [SeoJin]
 
   style: apa
   locale: en

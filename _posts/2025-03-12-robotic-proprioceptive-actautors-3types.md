@@ -8,6 +8,8 @@ categories: project
 thumbnail: assets/img/actuator-v1/thumbnail.png
 giscus_comments: true
 related_posts: true
+images:
+  slider: true
 toc:
   sidebar: left
 ---
@@ -30,9 +32,9 @@ toc:
 - gear box : 3d printed gearbox
 
 you can see more specific code at [simplefoc documents](https://docs.simplefoc.com/code)
-
-<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true">
-  <swiper-slide><img src="assets/img/actuator-v1/img1.png" /></swiper-slide>
+{{ '/assets/img/actuator-v1/img1.png' | relative_url }}" /></swiper-slide>
+  <swiper-slide><img src="{{ '/assets/img/actuator-v1/img2.png' | relative_url }}" /></swiper-slide>
+  <swiper-slide><img src="{{ '/assets/img/actuator-v1/img3.png' | relative_url }}" /></swiper-slide>
   <swiper-slide><img src="assets/img/actuator-v1/img2.png" /></swiper-slide>
   <swiper-slide><img src="assets/img/actuator-v1/img3.png" /></swiper-slide>
 </swiper-container>

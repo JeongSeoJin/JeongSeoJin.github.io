@@ -37,10 +37,6 @@ you can see more specific code at [simplefoc documents](https://docs.simplefoc.c
 ## Proprioceptive Actuator V2 Specification
 ---
 
-![alt text](image.png)
-![alt text](image-2.png)
-![alt text](image-1.png)
-
 {% include figure.liquid loading="eager" path="assets/img/actuator-v2/image.png" width="100%" max-width="600px" alt="Actuator image 2" %}
 {% include figure.liquid loading="eager" path="assets/img/actuator-v2/image-2.png" width="100%" max-width="600px" alt="Actuator image 2" %}
 {% include figure.liquid loading="eager" path="assets/img/actuator-v2/image-1.png" width="100%" max-width="600px" alt="Actuator image 2" %}
@@ -70,12 +66,8 @@ you can see more specific code at [simplefoc documents](https://docs.simplefoc.c
 ---
 
 ![alt text](image.png)
-![alt text](image1.png)
-![alt text](image2.png)
-
-{% include figure.liquid loading="eager" path="assets/img/actuator-v3/image.png" width="100%" max-width="600px" alt="Actuator image 2" %}
-{% include figure.liquid loading="eager" path="assets/img/actuator-v3/image1.png" width="100%" max-width="600px" alt="Actuator image 2" %}
-{% include figure.liquid loading="eager" path="assets/img/actuator-v3/image2.png" width="100%" max-width="600px" alt="Actuator image 2" %}
+![alt text](image1.png)3 Specification
+---d loading="eager" path="assets/img/actuator-v3/image2.png" width="100%" max-width="600px" alt="Actuator image 2" %}
 
 ### Ball-Element Cycloidal drive actuator V2 (High Performance)
 - bldc motor : Gartt ML5210 bldc motor(1EA): [sunnysky x4108s-17 bldc motor](https://ko.aliexpress.com/item/4001297326582.html?spm=a2g0o.order_list.order_list_main.9.21ef140fx0qOKv&gatewayAdapt=glo2kor)

@@ -44,16 +44,6 @@
         "MATLAB",
         "ROS2"
       ]
-    },
-    {
-      "name": "Robotics",
-      "level": false,
-      "icon": "fa-solid fa-robot",
-      "keywords": [
-        "Robot Dynamics",
-        "Control Systems",
-        "Actuator Design"
-      ]
     }
   ],
   "languages": [

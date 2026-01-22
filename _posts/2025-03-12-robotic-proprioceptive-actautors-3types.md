@@ -31,6 +31,11 @@ toc:
 
 you can see more specific code at [simplefoc documents](https://docs.simplefoc.com/code)
 
+<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true">
+  <swiper-slide><img src="assets/img/actuator-v1/img1.png" /></swiper-slide>
+  <swiper-slide><img src="assets/img/actuator-v1/img2.png" /></swiper-slide>
+  <swiper-slide><img src="assets/img/actuator-v1/img3.png" /></swiper-slide>
+</swiper-container>
 
 ---
 

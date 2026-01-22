@@ -4,23 +4,8 @@
     "label": "Undergraduate Student",
     "image": "",
     "email": "austinluis@dgu.ac.kr",
-    "phone": false,
-    "url": false,
-    "summary": "A Mechanical Engineering undergraduate student at Dongguk University, South Korea, with a passion for Robotics and Science. Eager to apply theoretical knowledge to practical challenges in the field of Robotics.",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    "url": "https://www.instagram.com/engineering.seojin_n.n/",
+    "summary": "A Mechanical Engineering undergraduate student at Dongguk University, South Korea, with a passion for Robotics and Science. Eager to apply theoretical knowledge to practical challenges in the field of Robotics."
   },
   "education": [
     {
@@ -30,7 +15,7 @@
       "area": "Mechanical Engineering",
       "studyType": "Undergraduate",
       "startDate": "2024-03-01",
-      "endDate": "2028-02-28",
+      "endDate": "2030-02-28",
       "score": "4.46/4.5 GPA",
       "courses": false
     }
@@ -69,4 +54,14 @@
       ]
     }
   ],
+  "projects": [
+    {
+      "name": "Quantum Computing",
+      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
+      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "url": "https://example.com"
+    }
+  ]
 }

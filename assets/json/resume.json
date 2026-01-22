@@ -46,7 +46,6 @@
       ]
     }
   ],
-  "languages": false,
   "interests": [
     {
       "name": "Robotics",
@@ -56,7 +55,7 @@
         "Robot Dynamics",
         "Control Systems",
         "Designing Overall Robotic Systems",
-        "Reinforcement Learning for Locomotive Systems",
+        "RL for Locomotive Systems",
         "3D Printings & Fabrications"
       ]
     }

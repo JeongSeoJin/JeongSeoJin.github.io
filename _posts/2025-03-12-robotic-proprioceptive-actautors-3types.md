@@ -39,6 +39,14 @@ you can see more specific code at [simplefoc documents](https://docs.simplefoc.c
   <swiper-slide><img src="{{ '/assets/img/actuator-v1/img3.png' | relative_url }}" /></swiper-slide>
 </swiper-container>
 
+<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/actuator-v1/img1.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/actuator-v1/img2.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/actuator-v1/img3.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/actuator-v1/img4.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/actuator-v1/img5.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+</swiper-container>
+
 ---
 
 ## Proprioceptive Actuator V2 Specification

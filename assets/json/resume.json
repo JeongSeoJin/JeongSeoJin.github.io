@@ -5,7 +5,7 @@
     "image": "",
     "email": "austinluis@dgu.ac.kr",
     "url": "https://www.instagram.com/engineering.seojin_n.n/",
-    "summary": "A Mechanical Engineering undergraduate student at Dongguk University, South Korea, with a passion for Robotics and Science. Eager to apply theoretical knowledge to practical challenges in the field of Robotics."
+    "summary": "A Mechanical Engineering undergraduate student at Dongguk University, South Korea, with a passion for Robotics and Science. Eager to apply theoretical knowledge to practical challenges robotic system design through hands-on projects.",
   },
   "education": [
     {
@@ -22,13 +22,16 @@
   ],
   "skills": [
     {
-      "name": "Tools",
+      "name": "Tools & Hardware",
       "level": false,
-      "icon": "fa-solid fa-hashtag",
+      "icon": "fa-solid fa-wrench",
       "keywords": [
         "Onshape",
         "Fusion360",
-        "ROS2"
+        "CAE",
+        "Embedded Systems",
+        "3D Printing",
+        "Laser Machining"
       ]
     },
     {
@@ -37,33 +40,21 @@
       "icon": "fa-solid fa-code",
       "keywords": [
         "Python",
-        "C++",
-        "MATLAB"
+        "C/C++",
+        "MATLAB",
+        "ROS2"
       ]
     },
     {
-      "name": "Mechanical Skills",
+      "name": "Robotics",
       "level": false,
-      "icon": "fa-solid fa-cogs",
+      "icon": "fa-solid fa-robot",
       "keywords": [
-        "3D Modeling",
-        "Mechanical Design",
-        "Robotic Actuator Design"
-      ]
-    },
-    {
-      "name": "Hardware",
-      "level": false,
-      "icon": "fa-solid fa-user-gear",
-      "keywords": [
-        "ESP32",
-        "Arduino",
-        "Raspberry Pi",
-        "3D Printer",
-        "Laser Machine"
+        "Robot Dynamics",
+        "Control Systems",
+        "Actuator Design"
       ]
     }
-
   ],
   "languages": [
     {
@@ -81,8 +72,10 @@
       "icon": "fa-solid fa-tag",
       "keywords": [
         "Robotic Actuator Design",
-        "3D Printing",
-        "Designing Overall Robotic Systems"
+        "Robot Dynamics",
+        "Control Systems",
+        "Designing Overall Robotic Systems",
+        "3D Printing & Fabrication"
       ]
     }
   ],

@@ -63,6 +63,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/qdd-actuator/";
           
         },
+      },{id: "post-a-low-cost-3d-printed-proprioceptive-actuator-for-hri",
+        
+          title: "A Low-Cost 3D-Printed Proprioceptive Actuator for HRI",
+        
+        description: "1:10 gear ratio, low-cost bldc motor, drv8302 motor driver",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/robotic-proprioceptive-actautors-3types/";
+          
+        },
       },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",

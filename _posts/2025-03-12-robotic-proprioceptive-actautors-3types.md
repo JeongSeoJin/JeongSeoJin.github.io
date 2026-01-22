@@ -5,7 +5,7 @@ date: 2025-03-12 12:00:00
 description: 1:10 gear ratio, low-cost bldc motor, drv8302 motor driver
 tags: Robotic QDD Actuator
 categories: project
-thumbnail: assets/img/c-qdd-actuator/image_4.jpg
+thumbnail: assets/img/actuator-v1/thumbnail.png
 giscus_comments: true
 related_posts: true
 toc:
@@ -62,14 +62,13 @@ you can see more specific code at [simplefoc documents](https://docs.simplefoc.c
 you can see more specific code at [simplefoc documents](https://docs.simplefoc.com/code)
 
 ---
-## Proprioceptive Actuator V2 Specification
+## Proprioceptive Actuator V3 Specification
 ---
 
-![alt text](image.png)
-![alt text](image1.png)3 Specification
----d loading="eager" path="assets/img/actuator-v3/image2.png" width="100%" max-width="600px" alt="Actuator image 2" %}
+{% include figure.liquid loading="eager" path="assets/img/actuator-v3/image.png" width="100%" max-width="600px" alt="Actuator image 2" %}
+{% include figure.liquid loading="eager" path="assets/img/actuator-v3/image1.png" width="100%" max-width="600px" alt="Actuator image 2" %}
 
-### Ball-Element Cycloidal drive actuator V2 (High Performance)
+### Ball-Element Cycloidal drive actuator V3 (High Performance)
 - bldc motor : Gartt ML5210 bldc motor(1EA): [sunnysky x4108s-17 bldc motor](https://ko.aliexpress.com/item/4001297326582.html?spm=a2g0o.order_list.order_list_main.9.21ef140fx0qOKv&gatewayAdapt=glo2kor)
 - motor driver : drv8302(1EA) : [drv8302 driver](https://ko.aliexpress.com/item/4000126430773.html?spm=a2g0o.order_list.order_list_main.14.2718140fpj8eC3&gatewayAdapt=glo2kor)
 - microcontroller : ESP-wroom-32(1EA) : [ESP-wroom-32](https://ko.aliexpress.com/item/1005007050459447.html?spm=a2g0o.order_list.order_list_main.46.846e140fXxRS15&gatewayAdapt=glo2kor)

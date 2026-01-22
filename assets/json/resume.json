@@ -61,11 +61,12 @@
       "name": "Robotics",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Robotic Actuator Design",
+        "Robotic Actuator Designs",
         "Robot Dynamics",
         "Control Systems",
         "Designing Overall Robotic Systems",
-        "3D Printing & Fabrication"
+        "Reinforcement Learning for Locomotive Systems",
+        "3D Printings & Fabrications"
       ]
     }
   ],

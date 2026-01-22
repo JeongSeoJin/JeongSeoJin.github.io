@@ -6,14 +6,14 @@
     - name: Date of Birth
       value: 24th Jan 2005
     - name: Languages
-      value: Korean(native), English
+      value: Korean (native), English
 
 - title: Education
   type: time_table
   contents:
     - title: Undergraduate Student
       institution: Dongguk University, Seoul, South Korea
-      year: 2024
+      year: 1905
       description:
         - Description 1.
         - Description 2.
@@ -22,7 +22,7 @@
             - Sub-description 1.
             - Sub-description 2.
     - title: Federal teaching diploma
-      institution: 
+      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
       year: 1900
       description:
         - Description 1.
@@ -31,9 +31,9 @@
 - title: Experience
   type: time_table
   contents:
-    - title: 
-      institution: 
-      year:
+    - title: Professor of Theoretical Physics
+      institution: Institute for Advanced Study, Princeton University
+      year: 1933 - 1955
       description:
         - Description 1.
         - Description 2.

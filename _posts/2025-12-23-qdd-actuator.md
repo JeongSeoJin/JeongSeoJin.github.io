@@ -194,18 +194,17 @@ Moving forward, I aim to integrate these custom QDD actuators into a mid-size bi
 
 ## 8. References
 
-[1] S. Seok et al., "Design Principles for Energy-Efficient Legged Locomotion and Implementation on the MIT Cheetah Robot," in IEEE/ASME Transactions on Mechatronics, vol. 20, no. 3, pp. 1117-1129, June 2015, doi: 10.1109/TMECH.2014.2339013. 
+[1] S. Seok et al., "Design Principles for Energy-Efficient Legged Locomotion and Implementation on the MIT Cheetah Robot," in IEEE/ASME Transactions on Mechatronics, vol. 20, no. 3, pp. 1117-1129, June 2015, doi: 10.1109/TMECH.2014.2339013.
 
-[2]T. Zhu, J. Hooks and D. Hong, "Design, Modeling, and Analysis of a Liquid Cooled Proprioceptive Actuator for Legged Robots," 2019 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), Hong Kong, China, 2019, pp. 36-43, doi: 10.1109/AIM.2019.8868596.
+[2] T. Zhu, J. Hooks and D. Hong, "Design, Modeling, and Analysis of a Liquid Cooled Proprioceptive Actuator for Legged Robots," in 2019 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), Hong Kong, China, 2019, pp. 36-43, doi: 10.1109/AIM.2019.8868596.
 
 [3] P. M. Wensing, A. Wang, S. Seok, D. Otten, J. Lang and S. Kim, "Proprioceptive Actuator Design in the MIT Cheetah: Impact Mitigation and High-Bandwidth Physical Interaction for Dynamic Legged Robots," in IEEE Transactions on Robotics, vol. 33, no. 3, pp. 509-522, June 2017, doi: 10.1109/TRO.2016.2640183.
 
-[4] Tan, J., Zhang, T., Coumans, E., Iscen, A., Bai, Y., Hafner, D., ... & Vanhoucke, V. (2018). Sim-to-real: Learning agile locomotion for quadruped robots. arXiv preprint arXiv:1804.10332.
+[4] J. Tan et al., "Sim-to-Real: Learning Agile Locomotion for Quadruped Robots," in Proc. Robotics: Science and Systems (RSS), 2018, arXiv:1804.10332.
 
-[5] https://biomimetics.mit.edu/research/1a9ba04b-d200-4743-b8fc-bf231f3231f0
+[5] MIT Biomimetics Robotics Lab, "Proprioceptive Actuator Design," biomimetics.mit.edu. [Online]. Available: https://biomimetics.mit.edu/research/1a9ba04b-d200-4743-b8fc-bf231f3231f0. [Accessed: Jan. 23, 2026].
 
-[6] Sensinger, J. W. (February 9, 2010). "Unified Approach to Cycloid Drive Profile, Stress, and Efficiency Optimization." ASME. J. Mech. Des. February 2010; 132(2): 024503. https://doi.org/10.1115/1.4000832
+[6] J. W. Sensinger, "Unified Approach to Cycloid Drive Profile, Stress, and Efficiency Optimization," ASME Journal of Mechanical Design, vol. 132, no. 2, p. 024503, Feb. 2010, doi: 10.1115/1.4000832.
 
-[7] "bavaria-direct.co.za - Homebuilt Electric Motors," [Online]. Available: https://www.bavaria-direct.co.za/scheme/calculator/.
-
+[7] "Homebuilt Electric Motors - Calculator," bavaria-direct.co.za. [Online]. Available: https://www.bavaria-direct.co.za/scheme/calculator/. [Accessed: Jan. 23, 2026].
 

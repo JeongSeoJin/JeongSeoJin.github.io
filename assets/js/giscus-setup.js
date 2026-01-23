@@ -20,7 +20,7 @@ function determineGiscusTheme() {
     src: "https://giscus.app/client.js",
     "data-repo": "JeongSeoJin/JeongSeoJin.github.io",
     "data-repo-id": "R_kgDOQ8suog",
-    "data-category": "Comments",
+    "data-category": "Q&A",
     "data-category-id": "DIC_kwDOQ8suos4C1RcP",
     "data-mapping": "title",
     "data-strict": "1",

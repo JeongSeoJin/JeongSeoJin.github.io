@@ -24,9 +24,3 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
-
-.card {
-  border: none !important;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  border-radius: 12px;
-}

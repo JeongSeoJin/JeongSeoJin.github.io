@@ -30,9 +30,18 @@ toc:
 
 # Cycloidal QDD Actuator for Dynamic Robots
 
-> *Note: This is an ongoing project. Please note that some sections, particularly '5. Control & Validation', are currently being documented. New test results and updates will be uploaded soon.*
+***Note: This is an ongoing project. Please note that some sections, particularly '5. Control & Validation', are currently being documented. New test results and updates will be uploaded soon.***
 
 [view this page in github with resources](https://github.com/JeongSeoJin/quasi-direct-drive-actuator)
+
+
+---
+## 0. Background: Motivation and Evolution
+This Project builds upon my previous project project, 'A Low-Cost 3D-Printed Proprioceptive Actuator for HRI', and represents a significant step forward in performance and design.
+
+In the ealier actuators(v1, v2 and v3), these exhibited insufficient torque density, which limited their application in dynamic and agile robotic systems. The primary cause was the use of off-the-shelf BLDC drone motors; their small air-gap radius, integrated with low-ratio 3D-printed reducers, could not generate the necessary torque. 
+
+To address this problem, I initiated this project with a focus on maximizing torque density, compactness and system efficiecy. By adopting a large-diameter "pancake" BLDC motor to maximize the air-gap radius for high torque density and integrating a internal cycloidal reducer for compactness, I significantly enhenced the actuator's dynamics and agility. Inspired by the MIT Mini Cheetah's design philosophy, this project demonstrates a transition toward a more robust and high-performance Quasi-Direct Drive (QDD) system.
 
 ---
 
@@ -149,8 +158,7 @@ The output transmission relies on smooth rolling contact. I installed six M2x20m
 ---
 
 ## 5. Control & Validation
-preparing 
-
+To validate the actuator's performance, a preliminary torque control experiment was performed. The torque was applied in a cascaded manner from 1 Nm up to 7 Nm, while maintaining a constant payload torque of approximately 2.2 Nm($1.5kg \times 0.15m \times 9.81m/s^2 \approx 2.2Nm$).
 
 ---
 

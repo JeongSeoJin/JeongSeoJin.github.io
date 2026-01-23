@@ -76,7 +76,7 @@ Consequently, this **improved back-drivability and responsiveness** enable the r
 
 
 ### 2.3 Motor Design Optimization
-To achieve high torque density suitable for a Quasi-Direct Drive (QDD) system, I focused on the geometric parameters of the motor. According to the motor design principles outlined in the MIT Cheetah research, the continuous torque generation capability ($\tau$) is approximated by the following equation [[4]](#8-references):
+To achieve high torque density suitable for a Quasi-Direct Drive (QDD) system, I focused on the geometric parameters of the motor. According to the motor design principles outlined in the MIT Cheetah research, the continuous torque generation capability ($\tau$) is approximated by the following equation [[1], [5]](#8-references):
 
 $$\tau \propto \sigma \cdot l_{st} \cdot r_g^2$$
 
@@ -85,7 +85,7 @@ Where:
 * **$l_{st}$**: Stack length of the motor
 * **$r_g$**: Air gap radius
 
-As shown in the equation, torque is linearly proportional to the stack length ($l_{st}$) but proportional to the **square of the air gap radius ($r_g^2$)**. This implies that increasing the motor diameter is significantly more efficient for boosting torque than increasing its length. Based on this principle, I selected a stator with a large diameter (8110 size) to maximize the air gap radius, thereby securing sufficient torque even with a low gear reduction ratio.
+As shown in the equation, torque is linearly proportional to the stack length ($l_{st}$) but proportional to the **square of the air gap radius ($r_g^2$)**. This implies that increasing the motor diameter is significantly more efficient for boosting torque than increasing its length. Based on this principle, I selected a stator with a large diameter (8110 size) to maximize the air gap radius, thereby securing sufficient torque even with a low gear reduction ratio. Furthermore, this large-diameter stator design provides a sufficient hollow center which can be utilized to embed the reducer gear, improving the compactness of the actuator and torque density.
 
 ### 2.4 Transmission Selection: Why Cycloidal Reducer?
 
@@ -93,9 +93,9 @@ In dynamic legged locomotion, the actuator must withstand high impact loads caus
 
 Similarly, **Planetary Gearboxes**, though common, exhibit inherent backlash. It works well with aluminum gears, but becomes significantly fragile when 3D printed. In a 3D-printed planetary system, the stress concentrates on individual small gear teeth, making them prone to catastrophic failure under sudden external forces.
 
-To ensure robustness, I selected a **Cycloidal Reducer** architecture. According to Sensinger's research, this mechanism distributes the load across multiple lobes simultaneously. This load-sharing capability provides significantly higher Shock Resistance compared to involute gears or fragile harmonic drives, making it the ideal candidate for a fully 3D-printed transmission [[3]](#8-references).
+To ensure robustness, I selected a **Cycloidal Reducer** architecture. According to Sensinger's research, this mechanism distributes the load across multiple lobes simultaneously. This load-sharing capability provides significantly higher Shock Resistance compared to involute gears or fragile harmonic drives, making it the ideal candidate for a fully 3D-printed transmission [[6]](#8-references).
 
-Furthermore, I optimized the internal mechanism for efficiency. While the outer profile uses a solid design for structural strength, the internal output mechanism operates based on Rolling Contact. By utilizing rolling pins for the output shaft transmission, I successfully minimized internal friction where structural fragility is less of a concern. This strategic design choice preserves the Back-drivability required for the QDD system while maintaining the robustness of the outer shell.
+( -- confirmation needed -- )Furthermore, I optimized the internal mechanism for efficiency. While the outer profile uses a solid design for structural strength, the internal output mechanism operates based on Rolling Contact. By utilizing rolling pins for the output shaft transmission, I successfully minimized internal friction where structural fragility is less of a concern. This strategic design choice preserves the Back-drivability required for the QDD system while maintaining the robustness of the outer shell.
 
 ---
 
@@ -194,7 +194,13 @@ Moving forward, I aim to integrate these custom QDD actuators into a mid-size bi
 
 [4] Tan, J., Zhang, T., Coumans, E., Iscen, A., Bai, Y., Hafner, D., ... & Vanhoucke, V. (2018). Sim-to-real: Learning agile locomotion for quadruped robots. arXiv preprint arXiv:1804.10332.
 
-[3] Sensinger, J. W. (February 9, 2010). "Unified Approach to Cycloid Drive Profile, Stress, and Efficiency Optimization." ASME. J. Mech. Des. February 2010; 132(2): 024503. https://doi.org/10.1115/1.4000832
+[5] https://biomimetics.mit.edu/research/1a9ba04b-d200-4743-b8fc-bf231f3231f0
+
+
+
+
+
+[6] Sensinger, J. W. (February 9, 2010). "Unified Approach to Cycloid Drive Profile, Stress, and Efficiency Optimization." ASME. J. Mech. Des. February 2010; 132(2): 024503. https://doi.org/10.1115/1.4000832
 
 [4] "bavaria-direct.co.za - Homebuilt Electric Motors," [Online]. Available: https://www.bavaria-direct.co.za/scheme/calculator/.
 

@@ -32,7 +32,7 @@ toc:
 
 > *Note: This is an ongoing project. Please note that some sections, particularly '5. Control & Validation', are currently being documented. New test results and updates will be uploaded soon.*
 
-[=> view this page in github with resources](https://github.com/JeongSeoJin/quasi-direct-drive-actuator)
+[view this page in github with resources](https://github.com/JeongSeoJin/quasi-direct-drive-actuator)
 
 ---
 
@@ -59,9 +59,11 @@ The current prototype utilizes a 3D-printed and aluminium structure to ensure lo
 
 A high gear ratio leads to **high mechanical impedance**, primarily due to increased friction and reflected inertia compared to low-ratio systems [[1]](#8-references).
 
-This high impedance makes the motor response sluggish and susceptible to damage from sudden external impacts, as the actuators are too stiff to react compliantly. In other words, the actuator exhibits **poor back-drivability and low responsiveness**. Consequently, these properties hinder the robot's ability to interact safely with the environment, particularly in Human-Robot Interaction (HRI) scenarios or during dynamic locomotion.
+This high mechanical impedance makes the motor response sluggish and susceptible to damage from sudden external impacts, as the actuators are too stiff to react compliantly. In other words, the actuator exhibits **poor back-drivability and low responsiveness** [[2]](#8-references). Consequently, these properties hinder the robot's ability to interact safely with the environment, particularly in Human-Robot Interaction (HRI) scenarios or during dynamic locomotion.
 
-As robots become more integrated into our daily lives, physical interaction and cooperation will become increasingly common. In these scenarios, traditional actuators pose a significant safety risk. Since robots with stiff actuators struggle to sense external forces [[2]](#8-references), they can unintentionally injure people due to their lack of compliance. Furthermore, regarding locomotion, such robots cannot flexibly adapt to unpredictable environments, such as rough or uneven terrain, leading to instability.
+As robots become more integrated into our daily lives, physical interaction and cooperation will become increasingly common. In these scenarios, traditional actuators pose a significant safety risk. Since robots with stiff actuators struggle to sense external forces [[3]](#8-references), they can unintentionally injure people due to their lack of compliance. Furthermore, regarding locomotion, such robots cannot flexibly adapt to unpredictable environments, such as rough or uneven terrain, leading to instability. 
+
+Additionally, the complex dynamics & mechanical impedance of such actuators make them difficult to model accurately in physical simulators, creating a significant Sim-to-Real gap. Such modeling inaccuracies often lead to the failure of hardware deployment, particularly when using policies trained via Reinforcement Learning [[4]](#8-references).
 
 ### 2.2 The QDD System Solution
 To address these issues, I adopted a **Quasi-Direct Drive (QDD) architecture**. A QDD system typically features a low gear reduction ratio, ranging from 1:3 to 1:10. By positioning itself between Direct Drive (1:1) and traditional high-ratio drives (1:50 or higher), it combines the structural advantages of both systems.
@@ -186,8 +188,14 @@ Moving forward, I aim to integrate these custom QDD actuators into a mid-size bi
 
 [1] S. Seok et al., "Design Principles for Energy-Efficient Legged Locomotion and Implementation on the MIT Cheetah Robot," in IEEE/ASME Transactions on Mechatronics, vol. 20, no. 3, pp. 1117-1129, June 2015, doi: 10.1109/TMECH.2014.2339013. 
 
-[2] P. M. Wensing, A. Wang, S. Seok, D. Otten, J. Lang and S. Kim, "Proprioceptive Actuator Design in the MIT Cheetah: Impact Mitigation and High-Bandwidth Physical Interaction for Dynamic Legged Robots," in IEEE Transactions on Robotics, vol. 33, no. 3, pp. 509-522, June 2017, doi: 10.1109/TRO.2016.2640183.
+[2]T. Zhu, J. Hooks and D. Hong, "Design, Modeling, and Analysis of a Liquid Cooled Proprioceptive Actuator for Legged Robots," 2019 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), Hong Kong, China, 2019, pp. 36-43, doi: 10.1109/AIM.2019.8868596.
+
+[3] P. M. Wensing, A. Wang, S. Seok, D. Otten, J. Lang and S. Kim, "Proprioceptive Actuator Design in the MIT Cheetah: Impact Mitigation and High-Bandwidth Physical Interaction for Dynamic Legged Robots," in IEEE Transactions on Robotics, vol. 33, no. 3, pp. 509-522, June 2017, doi: 10.1109/TRO.2016.2640183.
+
+[4] Tan, J., Zhang, T., Coumans, E., Iscen, A., Bai, Y., Hafner, D., ... & Vanhoucke, V. (2018). Sim-to-real: Learning agile locomotion for quadruped robots. arXiv preprint arXiv:1804.10332.
 
 [3] Sensinger, J. W. (February 9, 2010). "Unified Approach to Cycloid Drive Profile, Stress, and Efficiency Optimization." ASME. J. Mech. Des. February 2010; 132(2): 024503. https://doi.org/10.1115/1.4000832
 
 [4] "bavaria-direct.co.za - Homebuilt Electric Motors," [Online]. Available: https://www.bavaria-direct.co.za/scheme/calculator/.
+
+

@@ -56,7 +56,7 @@ ninja.data = [{
         
           title: "A Cycloidal Quasi-Direct Drive Actuator Design, Fabrication and Control",
         
-        description: "This design is inspired by MIT mini cheetah",
+        description: "Cycloidal-QDD Actuator, Customized BLDC Motor, FOC Controller, High Dynamics &amp; Agility",
         section: "Posts",
         handler: () => {
           
@@ -67,7 +67,7 @@ ninja.data = [{
         
           title: "A Low-Cost Modular 3D-Printed Proprioceptive Actuator for HRI",
         
-        description: "1:10 gear ratio, low-cost bldc motor, drv8302 motor driver",
+        description: "10:1 ratio Reducer, BLDC Motor, FOC Controller",
         section: "Posts",
         handler: () => {
           

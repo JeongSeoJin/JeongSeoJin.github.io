@@ -14,6 +14,21 @@ toc:
   sidebar: left
 ---
 
+# A Low-Cost Modular 3D-Printed Proprioceptive Actuator for HRI
+
+[view this page in github with resources](https://github.com/JeongSeoJin/robotic-actuators)
+
+## 0. Background: Motivation and Evolution
+In my previous project, 'Modular Cycloidal Actuator-based 4DoF Robotic Arm', featuring 27:1 gear ratio, fully 3D-printed cycloidal reducer and precise position control using nama17 stepper motor. 
+
+<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/4dof-robotic-arm/img1.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/4dof-robotic-arm/img2.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/4dof-robotic-arm/img3.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/4dof-robotic-arm/img4.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/4dof-robotic-arm/img5.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/4dof-robotic-arm/img6.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+</swiper-container>
 
 ## Actuator V1 Specification
 ---

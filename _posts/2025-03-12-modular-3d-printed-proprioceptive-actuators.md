@@ -3,7 +3,7 @@ layout: post
 title: A Low-Cost Modular 3D-Printed Proprioceptive Actuator for HRI
 date: 2025-03-12 12:00:00
 description: 10:1 ratio Reducer, BLDC Motor, FOC Controller and Proprioceptive Sense
-tags: Robotic QDD Actuator
+tags: QDD-Actuator
 categories: project
 thumbnail: assets/img/actuator-v1/thumbnail.png
 giscus_comments: true
@@ -48,7 +48,7 @@ To address this issue, I developed 'A Low-Cost 3D-Printed Proprioceptive Actuato
 Electric BLDC Motors are suitable for robotic actuators
 
 ## Reducer
-I adopted cycloidal reducer which demonstrates high robustness
+I adopted inversed cycloidal reducer by **Mishin Machine**
 
 ## FOC Controller
 I used 'drv8302 motor driver'

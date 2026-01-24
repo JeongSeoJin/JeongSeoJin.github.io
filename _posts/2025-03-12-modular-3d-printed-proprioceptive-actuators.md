@@ -21,7 +21,7 @@ In my previous project, 'Modular Cycloidal Actuator-based 4DoF Cooperative Robot
 
 To address this issue, I developed a Low-Cost 3D-Printed Proprioceptive Actuator, utilizing bldc drone motors, FOC controller for precise torque/position control and proprioceptive sensing of current of motor. And I designed Quasi-Direct Drive(QDD) reducer(low gear ratio reducer) and Impedance Control demonstrating high dynmaics, agility and compliance properties for HRI.
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-2">
   <div class="col">
     {% include figure.liquid loading="eager" path="assets/img/4dof-robotic-arm/img1.png" class="img-fluid rounded z-depth-1" %}
   </div>
@@ -66,7 +66,7 @@ To address this issue, I developed a Low-Cost 3D-Printed Proprioceptive Actuator
 you can see more specific code at [simplefoc documents](https://docs.simplefoc.com/code)
 
 
-<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+<div class="row row-cols-1 row-cols-md-3 g-2 mb-5">
   <div class="col">
     {% include figure.liquid loading="eager" path="assets/img/actuator-v1/img1.png" class="img-fluid rounded z-depth-1" %}
   </div>

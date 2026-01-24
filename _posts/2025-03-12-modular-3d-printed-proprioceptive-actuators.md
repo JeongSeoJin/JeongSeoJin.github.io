@@ -19,7 +19,9 @@ toc:
 [view this page in github with resources](https://github.com/JeongSeoJin/robotic-actuators)
 
 ## 0. Background: Motivation and Evolution
-In my previous project, 'Modular Cycloidal Actuator-based 4DoF Robotic Arm', featuring 27:1 gear ratio, fully 3D-printed cycloidal reducer and precise position control using nama17 stepper motor. 
+In my previous project, 'Modular Cycloidal Actuator-based 4DoF Cooperative Robotic Arm', featuring *27:1 gear ratio*, *fully 3D-printed cycloidal reducer* and *precise position control using nama17 stepper motor with a4988 motor driver*. However, the lack of back-drivability of the actuators and torque-based control make my robotic arm significantly stiff, restricting Human-Robot Interaction(HRI). 
+
+To address this issue, I developed a Low-Cost 3D-Printed Proprioceptive Actuator, utilizing bldc drone motors, FOC controller for precise torque/position control and proprioceptive sensing of current of motor. And I designed QDD Design(low gear ratio reducer) and Impedance Control demonstrating high dynmaics, agility and compliance properties for HRI.
 
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
   <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/4dof-robotic-arm/img1.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>

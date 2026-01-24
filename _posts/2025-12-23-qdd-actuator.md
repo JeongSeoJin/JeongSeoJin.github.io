@@ -36,7 +36,7 @@ toc:
 
 
 ---
-## 0. Background: Motivation and Evolution
+## Background: Motivation and Evolution
 This Project builds upon my previous project project, 'A Low-Cost 3D-Printed Proprioceptive Actuator for HRI', and represents a significant step forward in performance and design.
 
 In the ealier actuators(v1, v2 and v3), these exhibited insufficient torque density, which limited their application in dynamic and agile robotic systems. The primary cause was the use of off-the-shelf BLDC drone motors; their small air-gap radius, integrated with low-ratio 3D-printed reducers, could not generate the necessary torque. 

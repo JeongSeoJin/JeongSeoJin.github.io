@@ -2,7 +2,7 @@
 layout: post
 title: A Low-Cost Modular 3D-Printed Proprioceptive Actuator for HRI
 date: 2025-03-12 12:00:00
-description: 1:10 gear ratio, low-cost bldc motor, drv8302 motor driver
+description: 10:1 ratio Reducer, BLDC Motor, FOC Controller
 tags: Robotic QDD Actuator
 categories: project
 thumbnail: assets/img/actuator-v1/thumbnail.png
@@ -42,9 +42,15 @@ To address this issue, I developed a Low-Cost 3D-Printed Proprioceptive Actuator
   </div>
 </div>
 
+---
 
+## BLDC Motor
 
+## Reducer
 
+## FOC Controller
+
+## CAN BUS Communication
 
 ## BOM & resources of Actuators(V1, V2 and V3)
 ### Actuator V1 Specification

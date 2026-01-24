@@ -71,7 +71,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/robotic-proprioceptive-actautors-3types/";
+            window.location.href = "/blog/2025/modular-3d-printed-proprioceptive-actuators/";
           
         },
       },{id: "books-the-godfather",

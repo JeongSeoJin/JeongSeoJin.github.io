@@ -2,7 +2,7 @@
 layout: post
 title: A Cycloidal Quasi-Direct Drive Actuator Design, Fabrication and Control
 date: 2025-12-23 10:14:00
-description: Cycloidal-QDD Actuator, Customized BLDC Motor, FOC Controller, High Dynamics & Agility
+description: Cycloidal-QDD Actuator, Customized BLDC Motor, FOC Controller, High Backdrivability, Responsiveness and High Dynamics & Agility
 tags: Robotic QDD Actuator
 categories: project
 thumbnail: assets/img/c-qdd-actuator/thumbnail.png

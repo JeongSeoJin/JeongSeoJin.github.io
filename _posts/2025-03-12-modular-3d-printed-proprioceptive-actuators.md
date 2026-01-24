@@ -2,7 +2,7 @@
 layout: post
 title: A Low-Cost Modular 3D-Printed Proprioceptive Actuator for HRI
 date: 2025-03-12 12:00:00
-description: 10:1 ratio Reducer, BLDC Motor, FOC Controller
+description: 10:1 ratio Reducer, BLDC Motor, FOC Controller and Proprioceptive Sense
 tags: Robotic QDD Actuator
 categories: project
 thumbnail: assets/img/actuator-v1/thumbnail.png

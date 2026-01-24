@@ -53,9 +53,9 @@ Traditional high-ratio gearboxes suffer from poor back-drivability, low responsi
 The current prototype utilizes a 3D-printed and aluminium structure to ensure low cost and accessibility. Preliminary assessments estimate a maximum holding torque exceeding 7 Nm, with comprehensive performance verification currently underway. This work contributes to the robotic community by providing a scalable, affordable, and high-performance actuation solution.
 
 <div style="display: flex; justify-content: space-around;">
-{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image_1.jpg" width="100%" max-width="300px" alt="Actuator image 1" %}
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image_1.jpg" width="100%" max-width="300px" alt="Actuator image 1" class="img-fluid rounded z-depth-1" %}
 
-{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image1.png" width="100%" max-width="300px" alt="Actuator image 2" %}
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image1.png" width="100%" max-width="300px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 </div>
 
 ---
@@ -118,9 +118,9 @@ To maximize efficiency, I integrated rollers into the output pins. Unlike simple
 For the current prototype, the gears, shafts and rotor are manufactured from CNC-machined Aluminum to verify the design with a high strength-to-weight ratio. (Note: The final goal of this project is to optimize the design for a fully 3D-printed, low-cost actuator for dynamic robots.)
 
 <div style="display: flex; justify-content: space-around;">
-{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image_2.jpg" width="100%" max-width="300px" alt="Actuator image 1" %}
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image_2.jpg" width="100%" max-width="300px" alt="Actuator image 1" class="img-fluid rounded z-depth-1" %}
 
-{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image4.png" width="100%" max-width="300px" alt="Actuator image 2" %}
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image4.png" width="100%" max-width="300px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 </div>
 
 ### 3.2 Electromagnetic Design (Custom BLDC)
@@ -138,7 +138,7 @@ For precise torque control and dynamic response, I integrated the **Moteus-c1 co
 
 It implements **Field Oriented Control (FOC)**, which is essential for smooth torque generation and the proprioceptive capabilities mentioned earlier. With a wide input range (10-51V) and 20A peak phase current, it provides sufficient power capacity to drive the custom-wound 8110 stator to its full potential.
 
-{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/controller.webp" width="100%" max-width="250px" alt="Actuator image 2" %}
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/controller.webp" width="100%" max-width="250px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 ---
 
 ## 4. Assembly

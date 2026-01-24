@@ -42,15 +42,20 @@ To address this issue, I developed a Low-Cost 3D-Printed Proprioceptive Actuator
   </div>
 </div>
 
-## Actuator V1 Specification
+
+
+
+
+## BOM & resources of Actuators(V1, V2 and V3)
+### Actuator V1 Specification
 ---
 
-{% include figure.liquid loading="eager" path="assets/img/actuator-v1/image.png" width="100%" max-width="600px" alt="Actuator image 2" %}
-{% include figure.liquid loading="eager" path="assets/img/actuator-v1/image-1.png" width="100%" max-width="600px" alt="Actuator image 2" %}
+{% include figure.liquid loading="eager" path="assets/img/actuator-v1/image.png" width="100%" max-width="600px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/actuator-v1/image-1.png" width="100%" max-width="600px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 
 
 
-### Ball-Element Cycloidal drive actuator V1
+#### Ball-Element Cycloidal drive actuator V1
 - bldc motor : 5010 bldc motor : [5010 bldc motor](https://ko.aliexpress.com/item/32479766898.html?spm=a2g0o.productlist.main.1.33057c53lJVQHb&algo_pvid=e840ea96-f714-4eec-8270-79e061d0168f&algo_exp_id=e840ea96-f714-4eec-8270-79e061d0168f-0&pdp_npi=4%40dis%21KRW%2123333%2118200%21%21%2115.77%2112.30%21%402151e6dc17377385292943241e47af%2157785798523%21sea%21KR%212150707868%21X&curPageLogUid=j8mT7lyyXHrL&utparam-url=scene%3Asearch%7Cquery_from%3A)
 - motor driver : simplefoc v2 : [simplefoc v2](https://simplefoc.com/simplefoc_shield_product)
 - microcontroller : arduino uno
@@ -61,27 +66,43 @@ To address this issue, I developed a Low-Cost 3D-Printed Proprioceptive Actuator
 you can see more specific code at [simplefoc documents](https://docs.simplefoc.com/code)
 
 
-<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/actuator-v1/img1.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/actuator-v1/img2.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/actuator-v1/img3.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/actuator-v1/img4.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/actuator-v1/img5.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/actuator-v1/img7.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/actuator-v1/img8.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/actuator-v1/img6.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-</swiper-container>
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+  <div class="col">
+    {% include figure.liquid loading="eager" path="assets/img/actuator-v1/img1.png" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col">
+    {% include figure.liquid loading="eager" path="assets/img/actuator-v1/img2.png" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col">
+    {% include figure.liquid loading="eager" path="assets/img/actuator-v1/img3.png" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col">
+    {% include figure.liquid loading="eager" path="assets/img/actuator-v1/img4.png" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col">
+    {% include figure.liquid loading="eager" path="assets/img/actuator-v1/img5.png" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col">
+    {% include figure.liquid loading="eager" path="assets/img/actuator-v1/img7.png" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col">
+    {% include figure.liquid loading="eager" path="assets/img/actuator-v1/img8.png" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col">
+    {% include figure.liquid loading="eager" path="assets/img/actuator-v1/img6.png" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
 
 ---
 
-## Proprioceptive Actuator V2 Specification
+### Proprioceptive Actuator V2 Specification
 ---
 
-{% include figure.liquid loading="eager" path="assets/img/actuator-v2/image.png" width="100%" max-width="600px" alt="Actuator image 2" %}
-{% include figure.liquid loading="eager" path="assets/img/actuator-v2/image-2.png" width="100%" max-width="600px" alt="Actuator image 2" %}
-{% include figure.liquid loading="eager" path="assets/img/actuator-v2/image-1.png" width="100%" max-width="600px" alt="Actuator image 2" %}
+{% include figure.liquid loading="eager" path="assets/img/actuator-v2/image.png" width="100%" max-width="600px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/actuator-v2/image-2.png" width="100%" max-width="600px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/actuator-v2/image-1.png" width="100%" max-width="600px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 
-### Ball-Element Cycloidal drive actuator V2 (High Performance)
+#### Ball-Element Cycloidal drive actuator V2 (High Performance)
 - bldc motor : Gartt ML5210 bldc motor(1EA): [gartt-ML5210 motor](https://ko.aliexpress.com/item/4001297326582.html?spm=a2g0o.order_list.order_list_main.9.21ef140fx0qOKv&gatewayAdapt=glo2kor)
 - motor driver : drv8302(1EA) : [drv8302 driver](https://ko.aliexpress.com/item/4000126430773.html?spm=a2g0o.order_list.order_list_main.14.2718140fpj8eC3&gatewayAdapt=glo2kor)
 - microcontroller : ESP-wroom-32(1EA) : [ESP-wroom-32](https://ko.aliexpress.com/item/1005007050459447.html?spm=a2g0o.order_list.order_list_main.46.846e140fXxRS15&gatewayAdapt=glo2kor)
@@ -102,13 +123,13 @@ you can see more specific code at [simplefoc documents](https://docs.simplefoc.c
 you can see more specific code at [simplefoc documents](https://docs.simplefoc.com/code)
 
 ---
-## Proprioceptive Actuator V3 Specification
+### Proprioceptive Actuator V3 Specification
 ---
 
-{% include figure.liquid loading="eager" path="assets/img/actuator-v3/image.png" width="100%" max-width="600px" alt="Actuator image 2" %}
-{% include figure.liquid loading="eager" path="assets/img/actuator-v3/image1.png" width="100%" max-width="600px" alt="Actuator image 2" %}
+{% include figure.liquid loading="eager" path="assets/img/actuator-v3/image.png" width="100%" max-width="600px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/actuator-v3/image1.png" width="100%" max-width="600px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 
-### Ball-Element Cycloidal drive actuator V3 (High Performance)
+#### Ball-Element Cycloidal drive actuator V3 (High Performance)
 - bldc motor : Gartt ML5210 bldc motor(1EA): [sunnysky x4108s-17 bldc motor](https://ko.aliexpress.com/item/4001297326582.html?spm=a2g0o.order_list.order_list_main.9.21ef140fx0qOKv&gatewayAdapt=glo2kor)
 - motor driver : drv8302(1EA) : [drv8302 driver](https://ko.aliexpress.com/item/4000126430773.html?spm=a2g0o.order_list.order_list_main.14.2718140fpj8eC3&gatewayAdapt=glo2kor)
 - microcontroller : ESP-wroom-32(1EA) : [ESP-wroom-32](https://ko.aliexpress.com/item/1005007050459447.html?spm=a2g0o.order_list.order_list_main.46.846e140fXxRS15&gatewayAdapt=glo2kor)

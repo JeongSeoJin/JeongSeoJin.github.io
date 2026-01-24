@@ -102,9 +102,7 @@ In dynamic legged locomotion, the actuator must withstand high impact loads caus
 
 Similarly, **Planetary Gearboxes**, though common, exhibit inherent backlash. It works well with aluminum gears, but becomes significantly fragile when 3D printed. In a 3D-printed planetary system, the stress concentrates on individual small gear teeth, making them prone to catastrophic failure under sudden external forces.
 
-To ensure robustness, I selected a **Cycloidal Reducer** architecture. According to Sensinger's research, this mechanism distributes the load across multiple lobes simultaneously. This load-sharing capability provides significantly higher Shock Resistance compared to involute gears or fragile harmonic drives, making it the ideal candidate for a fully 3D-printed transmission [[6]](#8-references).
-
-( -- confirmation needed -- )Furthermore, I optimized the internal mechanism for efficiency. While the outer profile uses a solid design for structural strength, the internal output mechanism operates based on Rolling Contact. By utilizing rolling pins for the output shaft transmission, I successfully minimized internal friction where structural fragility is less of a concern. This strategic design choice preserves the Back-drivability required for the QDD system while maintaining the robustness of the outer shell.
+To ensure robustness, I selected a **Cycloidal Reducer** architecture. According to Sensinger's research, this mechanism distributes the load across multiple lobes simultaneously. This load-sharing capability provides significantly higher Shock Resistance compared to involute gears or fragile harmonic drives, making it the ideal candidate for a fully 3D-printed transmission [[6], [7], [8]](#8-references).
 
 ---
 
@@ -129,7 +127,7 @@ For the current prototype, the gears, shafts and rotor are manufactured from CNC
 
 To optimize torque density within the compact housing, I integrated a **custom-built frameless Brushless DC (BLDC) motor** instead of using a standard motor.
 
-For the stator, I utilized a standard 8110 stator core. To achieve the desired current capacity and fill factor, the stator was hand-wound using 0.4mm enameled copper wire. I applied a Wye (Star) termination with 6 parallel strands and 5 turns per tooth, following the optimal winding scheme calculated via open-source tools [[7]](#8-references).
+For the stator, I utilized a standard 8110 stator core. To achieve the desired current capacity and fill factor, the stator was hand-wound using 0.4mm enameled copper wire. I applied a Wye (Star) termination with 6 parallel strands and 5 turns per tooth, following the optimal winding scheme calculated via open-source tools [[9]](#8-references).
 
 
 The motor adopts a 36N42P configuration (36 slots, 42 poles) to maximize torque output. For the rotor, 42 N52-grade Neodymium magnets were installed. These magnets were precisely bonded using high-strength epoxy (JB Weld) in an alternating polarity pattern (N-S-N-S) to maximize magnetic flux density and ensure structural integrity under high rotation speeds. Crucially, the rotor geometry was optimized to achieve a minimal air gap of 0.5mm. This tight clearance maximizes the magnetic flux linkage between the rotor and stator, thereby significantly enhancing the electromagnetic force and overall torque efficiency.
@@ -206,5 +204,9 @@ Moving forward, I aim to integrate these custom QDD actuators into a mid-size bi
 
 [6] J. W. Sensinger, "Unified Approach to Cycloid Drive Profile, Stress, and Efficiency Optimization," ASME Journal of Mechanical Design, vol. 132, no. 2, p. 024503, Feb. 2010, doi: 10.1115/1.4000832.
 
-[7] "Homebuilt Electric Motors - Calculator," bavaria-direct.co.za. [Online]. Available: https://www.bavaria-direct.co.za/scheme/calculator/. [Accessed: Jan. 23, 2026].
+[7] K. Lee, S. Hong, and J. H. Oh, "Development of a Lightweight and High-efficiency Compact Cycloidal Reducer for Legged Robots," International Journal of Precision Engineering and Manufacturing, vol. 21, no. 1, pp. 63-71, Jan. 2020, doi: 10.1007/s12541-019-00215-9.
+
+[8] J. W. Sensinger and J. H. Lipsey, "Cycloid vs. Harmonic Drives for Use in High Ratio, Single Stage Robotic Transmissions," in 2012 IEEE International Conference on Robotics and Automation (ICRA), Saint Paul, MN, USA, 2012, pp. 4130-4135, doi: 10.1109/ICRA.2012.6224739.
+
+[9] "Homebuilt Electric Motors - Calculator," bavaria-direct.co.za. [Online]. Available: https://www.bavaria-direct.co.za/scheme/calculator/. [Accessed: Jan. 23, 2026].
 

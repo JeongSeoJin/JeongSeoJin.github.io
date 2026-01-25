@@ -97,7 +97,7 @@ I used FOC Controller, 'drv8302 motor driver' to control the BLDC Motor. Unlike 
 In the Clark/Park Transform which is the one of the process of FOC Algorithm, Three phase current converted to two current state; d-axis and q-axis current. q-axis current is proportional to torque that the motor produce. Thus, external torque(perturbance) can be estimated by measuring q-axis current of the motor. 
 
 ### Experiment
-Gartt ML5210 BLDC Drone Motor + DRV8302 + AS5600 Encoder + ESP-Wroom-32
+The experiment is conducted by '**Gartt ML5210 BLDC Drone Motor + DRV8302 + AS5600 Encoder + ESP-Wroom-32**' and scale is used for baseline to validate the accuracy of the proprioceptive actuator.
 
 
 ### Evaluation
@@ -109,11 +109,13 @@ Gartt ML5210 BLDC Drone Motor + DRV8302 + AS5600 Encoder + ESP-Wroom-32
   caption="Evaluation of Proprioceptive Sensing Capacity" 
 %}
 
+Approximately, the error is getting bigger as it produce higher torque. 
+
 
 ## CAN BUS Communication
 I used TJA1051T to enable CAN BUS Communication which enables communicate between other controllers(MCU). This is essential for using multiple actuators system like locomotive & manipulator systems.
 
-## BOM & resources of Actuators 3types(Basic, Lite, Enhenced)
+## BOM & resources for 3 Types of Actuators (Basic, Lite and Enhanced)
 
 ### 1. QDD Actautor Basic
 ---
@@ -332,14 +334,14 @@ I used TJA1051T to enable CAN BUS Communication which enables communicate betwee
 
 ---
 
-### 3. QDD Actuator Enhenced
+### 3. QDD Actuator Enhanced
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/actuator-v2/image-1.png" width="100%" max-width="600px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 {% include figure.liquid loading="eager" path="assets/img/actuator-v2/image.png" width="100%" max-width="600px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 {% include figure.liquid loading="eager" path="assets/img/actuator-v2/image-2.png" width="100%" max-width="600px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 
-#### BOM of QDD Actuator Enhenced
+#### BOM of QDD Actuator Enhanced
 <div class="table-responsive">
   <table class="table table-sm table-hover table-bordered">
     <thead class="thead-light">

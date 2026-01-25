@@ -150,7 +150,7 @@ I used TJA1051T to enable CAN BUS Communication which enables communicate betwee
         <td>TJA1051T</td>
         <td style="text-align: center;">1</td>
         <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005007053249619.html" target="_blank">View</a></td>
-      </tr
+      </tr>
       <tr>
         <td rowspan="4" style="vertical-align: middle;"><b>Mechanical</b></td>
         <td>Gearbox</td>

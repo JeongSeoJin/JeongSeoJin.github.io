@@ -63,6 +63,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/qdd-actuator/";
           
         },
+      },{id: "post-applications-of-a-proprioceptive-actuator-3dof-robotic-arm-amp-humanoid-upper-body-robot-through-impedance-control",
+        
+          title: "Applications of a proprioceptive actuator:3Dof Robotic Arm &amp; Humanoid Upper Body Robot through...",
+        
+        description: "This is an extension of my previous project, &#39;Modular 3D-Printed Proprioceptive Actuator&#39;",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/dof-robotic-arm-impedance-control/";
+          
+        },
       },{id: "post-a-low-cost-modular-3d-printed-proprioceptive-actuator-for-hri",
         
           title: "A Low-Cost Modular 3D-Printed Proprioceptive Actuator for HRI",

@@ -93,6 +93,22 @@ I used FOC Controller, 'drv8302 motor driver' to control the BLDC Motor. Unlike 
   caption="Source: <a href='https://www.youtube.com/watch?v=AmS22zwl2EA'>SIROJU</a>" 
 %}
 
+## Proprioceptive Sensing Capacity
+In the Clark/Park Transform which is the one of the process of FOC Algorithm, Three phase current converted to two current state; d-axis and q-axis current. q-axis current is proportional to torque that the motor produce. Thus, external torque(perturbance) can be estimated by measuring q-axis current of the motor. 
+
+### Experiment
+Gartt ML5210 BLDC Drone Motor + DRV8302 + AS5600 Encoder + ESP-Wroom-32
+
+
+### Evaluation
+
+{% include figure.liquid 
+  loading="eager" 
+  path="assets/img/actuator-v1/evaluation-img.png" 
+  class="img-fluid rounded z-depth-1" 
+  caption="Evaluation of Proprioceptive Sensing Capacity" 
+%}
+
 
 ## CAN BUS Communication
 I used TJA1051T to enable CAN BUS Communication which enables communicate between other controllers(MCU). This is essential for using multiple actuators system like locomotive & manipulator systems.

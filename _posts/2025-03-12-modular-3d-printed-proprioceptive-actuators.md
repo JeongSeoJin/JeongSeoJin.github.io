@@ -111,7 +111,6 @@ I used TJA1051T to enable CAN BUS Communication which enables communicate betwee
 | | Insert Nuts | M3 x 3 mm | 6 | [View](https://ko.aliexpress.com/item/1005004870993068.html) |
 | | Insert Nuts | M3 x 6 mm | 6 | [View](https://ko.aliexpress.com/item/1005004870993068.html) |
 
-you can see more specific code at [simplefoc documents](https://docs.simplefoc.com/code)
 
 ---
 
@@ -161,7 +160,7 @@ you can see more specific code at [simplefoc documents](https://docs.simplefoc.c
 | | CAN Bus | None | - | - |
 | **Mechanical** | Gearbox | 3D Printed Gearbox | 1 set | - |
 
-you can see more specific code at [simplefoc documents](https://docs.simplefoc.com/code)
+
 
 ---
 

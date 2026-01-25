@@ -19,7 +19,7 @@ toc:
 ## Background: Motivation and Evolution
 In my previous project, 'Modular Cycloidal Actuator-based 4DoF Cooperative Robotic Arm', featuring **27:1 gear ratio**, **fully 3D-printed cycloidal reducer** and **precise position control using nama17 stepper motor with a4988 motor driver**. However, the lack of back-drivability of the actuators and torque-based control make my robotic arm significantly stiff, restricting Human-Robot Interaction(HRI). 
 
-<div class="row row-cols-1 row-cols-md-3 g-2">
+<div class="row row-cols-2 row-cols-md-3 g-2">
   <div class="col">
     {% include figure.liquid loading="eager" path="assets/img/4dof-robotic-arm/img1.png" class="img-fluid rounded z-depth-1" %}
   </div>
@@ -61,7 +61,7 @@ This brushless design eliminates mechanical friction from brushes, leading to hi
 I optend for an **Outrunner BLDC Motor** because a larger air-gap radius allows the motor to produce higher torque. Since the air-gap radius is directly correlates with torque density. Thus this design is ideal for high-performance actuators. For more technical detials, please refer to my other post: [Paper Review: 'Design Principles for Energy Efficient Legged Locomotion and Implementation on the MIT Cheetah Robot']({% post_url 2025-12-26-review01 %})."
 
 ## Reducer
-I adopted inversed cycloidal reducer by **Mishin Machine**
+I was inspired by **Mishin Machine** [wave roler reducer](https://www.youtube.com/watch?v=zOLQw-TxE7s) which is cycloidal-like reducer using ball-elements
 
 ## FOC Controller
 I used 'drv8302 motor driver'
@@ -104,7 +104,7 @@ you can see more specific code at [simplefoc documents](https://docs.simplefoc.c
 
 {% include figure.liquid loading="eager" path="assets/img/actuator-v1/image-1.png" width="100%" max-width="600px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 
-<div class="row row-cols-1 row-cols-md-3 g-2 mb-5">
+<div class="row row-cols-2 row-cols-md-3 g-2 mb-5">
   <div class="col">
     {% include figure.liquid loading="eager" path="assets/img/actuator-v1/img1.png" class="img-fluid rounded z-depth-1" %}
   </div>

@@ -65,7 +65,7 @@ ninja.data = [{
         },
       },{id: "post-applications-of-a-proprioceptive-actuator-3dof-robotic-arm-amp-humanoid-upper-body-robot-through-impedance-control",
         
-          title: "Applications of a proprioceptive actuator:3Dof Robotic Arm &amp; Humanoid Upper Body Robot through...",
+          title: "Applications of a proprioceptive actuator:3DoF Robotic Arm &amp; Humanoid Upper Body Robot through...",
         
         description: "This is an extension of my previous project, &#39;Modular 3D-Printed Proprioceptive Actuator&#39;",
         section: "Posts",

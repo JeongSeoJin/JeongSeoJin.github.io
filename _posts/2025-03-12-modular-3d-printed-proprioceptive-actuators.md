@@ -19,8 +19,6 @@ toc:
 ## Background: Motivation and Evolution
 In my previous project, 'Modular Cycloidal Actuator-based 4DoF Cooperative Robotic Arm', featuring **27:1 gear ratio**, **fully 3D-printed cycloidal reducer** and **precise position control using nama17 stepper motor with a4988 motor driver**. However, the lack of back-drivability of the actuators and torque-based control make my robotic arm significantly stiff, restricting Human-Robot Interaction(HRI). 
 
-To address this issue, I developed 'A Low-Cost 3D-Printed Proprioceptive Actuator', utilizing **bldc drone motors**, **FOC controller** for precise torque/position control and **proprioceptive sensing** of current of motor. And I designed **Quasi-Direct Drive(QDD) reducer**(low gear ratio reducer) and **Impedance Control** demonstrating high dynmaics, agility and compliance properties for HRI.
-
 <div class="row row-cols-1 row-cols-md-3 g-2">
   <div class="col">
     {% include figure.liquid loading="eager" path="assets/img/4dof-robotic-arm/img1.png" class="img-fluid rounded z-depth-1" %}
@@ -42,10 +40,25 @@ To address this issue, I developed 'A Low-Cost 3D-Printed Proprioceptive Actuato
   </div>
 </div>
 
+To address this issue, I developed 'A Low-Cost 3D-Printed Proprioceptive Actuator', utilizing **bldc drone motors**, **FOC controller** for precise torque/position control and **proprioceptive sensing** of current of motor. And I designed **Quasi-Direct Drive(QDD) reducer**(low gear ratio reducer) and **Impedance Control** demonstrating high dynmaics, agility and compliance properties for HRI.
+
 ---
 
 ## BLDC Motor
-Electric BLDC Motors are suitable for robotic actuators
+BLDC Motor Brushless DC (BLDC) motors are highly suitable for dynamic and agile robotic actuators due to their exceptional torque density, high velocity and acceleration, back-drivability, and proprioceptive sensing capabilities.
+
+A BLDC Motor is composed of two main parts: the stator and the rotor. the stator produce a rotating electromagnetic field via a motor controller(ESC), and the rotor(permanent magnet) follows this field to produce rotation without any brushes like standard DC Motor.
+
+This brushless design eliminates mechanical friction from brushes, leading to higher efficiency, longer lifespan and most importantly, the ability to estimate torque through current sensing—a key feature for proprioceptive control in legged robots.
+
+{% include figure.liquid 
+  loading="eager" 
+  path="assets/img/4dof-robotic-arm/image.png" 
+  class="img-fluid rounded z-depth-1" 
+  caption="Source: <a href='https://etonmmotor.com/outrunner-vs-inrunner-choosing-the-right-brushless-dc-motor/'>Etonm Motor</a>" 
+%}
+
+I optend for an **Outrunner BLDC Motor** because a larger air-gap radius allows the motor to produce higher torque. Since the air-gap radius is directly correlates with torque density. Thus this design is ideal for high-performance actuators. For more technical detials, please refer to my other post: [Paper Review: 'Design Principles for Energy Efficient Legged Locomotion and Implementation on the MIT Cheetah Robot']({% post_url 2025-12-26-review01 %})."
 
 ## Reducer
 I adopted inversed cycloidal reducer by **Mishin Machine**

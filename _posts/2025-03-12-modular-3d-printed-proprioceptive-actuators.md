@@ -106,6 +106,7 @@ I used TJA1051T to enable CAN BUS Communication which enables communicate betwee
 {% include figure.liquid loading="eager" path="assets/img/actuator-v3/image1.png" width="100%" max-width="600px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 
 #### BOM of QDD Actuator Basic
+
 <div class="table-responsive">
   <table class="table table-sm table-hover table-bordered">
     <thead class="thead-light">
@@ -256,6 +257,7 @@ I used TJA1051T to enable CAN BUS Communication which enables communicate betwee
 
 
 #### BOM of QDD Actuator Lite
+
 <div class="table-responsive">
   <table class="table table-sm table-hover table-bordered">
     <thead class="thead-light">
@@ -310,7 +312,6 @@ I used TJA1051T to enable CAN BUS Communication which enables communicate betwee
     </tbody>
   </table>
 </div>
-
 
 
 ---

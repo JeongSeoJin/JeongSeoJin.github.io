@@ -106,23 +106,115 @@ I used TJA1051T to enable CAN BUS Communication which enables communicate betwee
 {% include figure.liquid loading="eager" path="assets/img/actuator-v3/image1.png" width="100%" max-width="600px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 
 #### BOM of QDD Actuator Basic
-| Category | Component | Specification | Qty | Link |
-| :--- | :--- | :--- | :---: | :---: |
-| **Motor & Drive** | BLDC Motor | Sunnysky x4108s-17 | 1 | [View](https://ko.aliexpress.com/item/33057877767.html) |
-| | Motor Driver | DRV8302 | 1 | [View](https://ko.aliexpress.com/item/4000126430773.html) |
-| **Electronics** | Microcontroller | ESP-WROOM-32 | 1 | [View](https://ko.aliexpress.com/item/1005007050459447.html) |
-| | Magnetic Encoder | AS5600 | 1 | [View](https://ko.aliexpress.com/item/1005006502384626.html) |
-| | CAN Transceiver | TJA1051T | 1 | [View](https://ko.aliexpress.com/item/1005007053249619.html) |
-| **Mechanical** | Gearbox | 3D Printed Parts | 1 set | - |
-| | Ball Elements | M6 x 6mm | 10 | [View](https://ko.aliexpress.com/item/1005003729421711.html) |
-| | Bearings | 20 x 27 x 4 mm | 3 | [View](https://ko.aliexpress.com/item/1005006822777675.html) |
-| | Bearings | 45 x 55 x 6 mm | 1 | [View](https://ko.aliexpress.com/item/4000909605390.html) |
-| **Fasteners** | Bolts | M3 x 30 mm | 4 | [View](https://ko.aliexpress.com/item/1005005879037174.html) |
-| | Bolts | M3 x 20 mm | 6 | [View](https://ko.aliexpress.com/item/1005005879037174.html) |
-| | Bolts | M2 x 10 mm | 6 | - |
-| | Insert Nuts | M2 x 3 mm | 6 | [View](https://ko.aliexpress.com/item/1005004870993068.html) |
-| | Insert Nuts | M3 x 3 mm | 6 | [View](https://ko.aliexpress.com/item/1005004870993068.html) |
-| | Insert Nuts | M3 x 6 mm | 6 | [View](https://ko.aliexpress.com/item/1005004870993068.html) |
+<div class="table-responsive">
+  <table class="table table-sm table-hover table-bordered">
+    <thead class="thead-light">
+      <tr>
+        <th style="width: 15%;">Category</th>
+        <th style="width: 20%;">Component</th>
+        <th style="width: 45%;">Specification</th>
+        <th style="width: 10%; text-align: center;">Qty</th>
+        <th style="width: 10%; text-align: center;">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2" style="vertical-align: middle;"><b>Motor & Drive</b></td>
+        <td>BLDC Motor</td>
+        <td>Sunnysky x4108s-17</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/33057877767.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Motor Driver</td>
+        <td>DRV8302</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/4000126430773.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td rowspan="3" style="vertical-align: middle;"><b>Electronics</b></td>
+        <td>Microcontroller</td>
+        <td>ESP-WROOM-32</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005007050459447.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Magnetic Encoder</td>
+        <td>AS5600</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005006502384626.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>CAN Transceiver</td>
+        <td>TJA1051T</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005007053249619.html" target="_blank">View</a></td>
+      </tr
+      <tr>
+        <td rowspan="4" style="vertical-align: middle;"><b>Mechanical</b></td>
+        <td>Gearbox</td>
+        <td>3D Printed Parts</td>
+        <td style="text-align: center;">1 set</td>
+        <td style="text-align: center;">-</td>
+      </tr>
+      <tr>
+        <td>Ball Elements</td>
+        <td>M6 x 6mm</td>
+        <td style="text-align: center;">10</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005003729421711.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Bearings</td>
+        <td>20 x 27 x 4 mm</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005006822777675.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Bearings</td>
+        <td>45 x 55 x 6 mm</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/4000909605390.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td rowspan="6" style="vertical-align: middle;"><b>Fasteners</b></td>
+        <td>Bolts</td>
+        <td>M3 x 30 mm</td>
+        <td style="text-align: center;">4</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005005879037174.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Bolts</td>
+        <td>M3 x 20 mm</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005005879037174.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Bolts</td>
+        <td>M2 x 10 mm</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005005879037174.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Insert Nuts</td>
+        <td>M2 x 3 mm</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005004870993068.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Insert Nuts</td>
+        <td>M3 x 3 mm</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005004870993068.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Insert Nuts</td>
+        <td>M3 x 6 mm</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005004870993068.html" target="_blank">View</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
 ---
@@ -164,14 +256,60 @@ I used TJA1051T to enable CAN BUS Communication which enables communicate betwee
 
 
 #### BOM of QDD Actuator Lite
-| Category | Component | Specification | Qty | Link |
-| :--- | :--- | :--- | :---: | :---: |
-| **Motor & Drive** | BLDC Motor | 5010 BLDC Motor | 1 | [View](https://ko.aliexpress.com/item/32479766898.html?spm=a2g0o.productlist.main.1.33057c53lJVQHb&algo_pvid=e840ea96-f714-4eec-8270-79e061d0168f&algo_exp_id=e840ea96-f714-4eec-8270-79e061d0168f-0&pdp_npi=4%40dis%21KRW%2123333%2118200%21%21%2115.77%2112.30%21%402151e6dc17377385292943241e47af%2157785798523%21sea%21KR%212150707868%21X&curPageLogUid=j8mT7lyyXHrL&utparam-url=scene%3Asearch%7Cquery_from%3A) |
-| | Motor Driver | SimpleFOC Shield v2 | 1 | [View](https://simplefoc.com/simplefoc_shield_product) |
-| **Electronics** | Microcontroller | Arduino Uno | 1 | - |
-| | Magnetic Encoder | AS5600 | 1 | [View](https://ko.aliexpress.com/item/1005006502384626.html?spm=a2g0o.productlist.main.1.3b184509pllIzN&algo_pvid=5b9a62a0-d0b4-4c4f-8faf-10328b964263&algo_exp_id=5b9a62a0-d0b4-4c4f-8faf-10328b964263-0&pdp_npi=4%40dis%21KRW%211539%211523%21%21%211.04%211.03%21%402151e6dc17377383531286763e4796%2112000037438363873%21sea%21KR%212150707868%21X&curPageLogUid=Tml9fqmeUygT&utparam-url=scene%3Asearch%7Cquery_from%3A) |
-| | CAN Bus | None | - | - |
-| **Mechanical** | Gearbox | 3D Printed Gearbox | 1 set | - |
+<div class="table-responsive">
+  <table class="table table-sm table-hover table-bordered">
+    <thead class="thead-light">
+      <tr>
+        <th style="width: 15%;">Category</th>
+        <th style="width: 20%;">Component</th>
+        <th style="width: 45%;">Specification</th>
+        <th style="width: 10%; text-align: center;">Qty</th>
+        <th style="width: 10%; text-align: center;">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2" style="vertical-align: middle;"><b>Motor & Drive</b></td>
+        <td>BLDC Motor</td>
+        <td>5010 BLDC Motor</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/32479766898.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Motor Driver</td>
+        <td>SimpleFOC Shield v2</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;"><a href="https://simplefoc.com/simplefoc_shield_product" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td rowspan="3" style="vertical-align: middle;"><b>Electronics</b></td>
+        <td>Microcontroller</td>
+        <td>Arduino Uno</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">-</td>
+      </tr>
+      <tr>
+        <td>Magnetic Encoder</td>
+        <td>AS5600</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005006502384626.html" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>CAN Bus</td>
+        <td>None</td>
+        <td style="text-align: center;">-</td>
+        <td style="text-align: center;">-</td>
+      </tr>
+      <tr>
+        <td style="vertical-align: middle;"><b>Mechanical</b></td>
+        <td>Gearbox</td>
+        <td>3D Printed Gearbox</td>
+        <td style="text-align: center;">1 set</td>
+        <td style="text-align: center;">-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
 
@@ -271,7 +409,7 @@ I used TJA1051T to enable CAN BUS Communication which enables communicate betwee
         <td>Bolts</td>
         <td>M2 x 10 mm</td>
         <td style="text-align: center;">6</td>
-        <td style="text-align: center;">-</td>
+        <td style="text-align: center;"><a href="https://ko.aliexpress.com/item/1005005879037174.html" target="_blank">View</a></td>
       </tr>
       <tr>
         <td>Insert Nuts</td>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Applications of A Proprioceptive Actuator:3DoF Robotic Arm & Humanoid Upper Body Robot through Impedance Control
-date: 2025-03-12 12:00:00
+date: 2025-04-10 12:00:00
 description: This is an extension of my previous project, 'A Low-Cost Modular 3D-Printed Proprioceptive Actuator for HRI'
 tags: QDD-Actuator Robotic-Arm Humanoid
 categories: project

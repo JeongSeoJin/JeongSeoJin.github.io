@@ -15,7 +15,7 @@ toc:
 ---
 
 ## Background: Motivation and Evolution
-Based on my previous project, 'A Low-Cost Modular 3D-Printed Proprioceptive Actuator for HRI' I built a '3DoF Compliant Robotic Arm' and 'Humanoid Upper Body Robot'. The hardwares are composed of fully 3D-printed parts, featuring proprioceptive sensing capacity, compliance, impedance control and QDD design.
+Building upon my previous project, 'A Low-Cost Modular 3D-Printed Proprioceptive Actuator for HRI,' I developed a '3DoF Compliant Robotic Arm' and a 'Humanoid Upper Body Robot.' Both systems consist of fully 3D-printed parts and feature proprioceptive sensing capabilities, compliance, impedance control, and a QDD design.
 
 
 ## 3DoF Compliant Robotic Arm 
@@ -54,6 +54,6 @@ Based on my previous project, 'A Low-Cost Modular 3D-Printed Proprioceptive Actu
 </div>
 
 ## Conclusion
-I built an integrated robotic system using my proprioceptive actuator, implementing impedance control which enables the robot compliant to react. In respect of low-level controller, this project demonstrate that my own actuators are quite suitable for these robotic hardware platform. Although I couldn't design high-level controller(e.g. Model Predictive Controller and Reinforcement Learning etc), building a robotic hardware using my own robotic actuator is significantly meaningful to me. Since I can accelerate my studies and projects, and orient myself about my future projects. 
+I built an integrated robotic system using my custom proprioceptive actuators and implemented impedance control, which allows the robot to react compliantly to external forces. Through this project, I demonstrated that my actuators are highly suitable for this robotic hardware platform. Although I have not yet implemented high-level controllers (such as Model Predictive Control or Reinforcement Learning), building this hardware from scratch was a significant milestone. It has accelerated my studies and provided a clear direction for my future projects.
 
-Additionally, using these hardware platforms, I can design vision-based controller, Model Predictive Controller and Reinforcement Learning Model for high-level controllers. This will provide me foundation before a wide field to study about high-level controllers. 
+Moving forward, I plan to use this platform to design vision-based controllers, MPC, and Reinforcement Learning models. This hardware will serve as a solid foundation for my extensive study of high-level control systems.

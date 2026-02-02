@@ -35,6 +35,7 @@ Building upon my previous project, 'A Low-Cost Modular 3D-Printed Proprioceptive
   </div>
 </div>
 
+[===== video =====](https://www.instagram.com/reel/DGinllESO6v/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
 
 ## Humanoid Upper Body Robot
 
@@ -52,6 +53,8 @@ Building upon my previous project, 'A Low-Cost Modular 3D-Printed Proprioceptive
     {% include figure.liquid loading="eager" path="assets/img/applications/img0.png" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
+
+[===== video =====](https://www.instagram.com/reel/DG1IlQ_zkSP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
 
 ## Conclusion
 I built an integrated robotic system using my custom proprioceptive actuators and implemented impedance control, which allows the robot to react compliantly to external forces. Through this project, I demonstrated that my actuators are highly suitable for this robotic hardware platform. Although I have not yet implemented high-level controllers (such as Model Predictive Control or Reinforcement Learning), building this hardware from scratch was a significant milestone. It has accelerated my studies and provided a clear direction for my future projects.

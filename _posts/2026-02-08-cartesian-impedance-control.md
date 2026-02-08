@@ -5,7 +5,7 @@ date: 2026-02-08 10:14:00
 description: Basic PD Controller for Robot 
 tags: Impedance-Control PD-Control Dynamics
 categories: project
-thumbnail: assets/img/
+thumbnail: assets/img/impedance-control/image.png
 giscus_comments: true
 related_posts: true
 toc:

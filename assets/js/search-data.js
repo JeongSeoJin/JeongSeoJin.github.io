@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-paper-review-quot-sim-to-real-learning-agile-locomotion-for-quadruped-robots-quot",
+        },{id: "post-2dof-cartesian-impedance-control-trajectory-generation-and-robot-dynamics",
+        
+          title: "2DoF Cartesian Impedance Control, Trajectory Generation and Robot Dynamics",
+        
+        description: "Basic PD Controller for Robot",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/cartesian-impedance-control/";
+          
+        },
+      },{id: "post-paper-review-quot-sim-to-real-learning-agile-locomotion-for-quadruped-robots-quot",
         
           title: "Paper Review: &quot;Sim-to-Real: Learning Agile Locomotion For Quadruped Robots&quot;",
         
@@ -54,7 +65,7 @@ ninja.data = [{
         },
       },{id: "post-paper-review-quot-design-principles-for-energy-efficient-legged-locomotion-and-implementation-on-the-mit-cheetah-robot-quot",
         
-          title: "Paper Review:&quot;Design Principles for Energy Efficient Legged Locomotion and Implementation on the MIT...",
+          title: "Paper Review: &quot;Design Principles for Energy Efficient Legged Locomotion and Implementation on the...",
         
         description: "Focusing on Actuator Design &amp; Energy Flow Cycle",
         section: "Posts",

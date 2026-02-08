@@ -30,9 +30,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-2dof-cartesian-impedance-control-trajectory-generation-and-robot-dynamics",
+        },{id: "post-beyond-position-control-the-philosophy-of-interaction",
         
-          title: "2DoF Cartesian Impedance Control, Trajectory Generation and Robot Dynamics",
+          title: "Beyond Position Control: The Philosophy of Interaction",
         
         description: "Basic PD Controller for Robot",
         section: "Posts",

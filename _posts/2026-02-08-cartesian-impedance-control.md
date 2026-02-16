@@ -26,15 +26,18 @@ toc:
   });
 </script>
 
-
-# Beyond Position Control: The Philosophy of Interaction
 > **Subtitle:** Why Cartesian Impedance Control is the key to safe Human-Robot Interaction (HRI).
 
 ## 1. Background: Motivation and Evolution
 
-Historically, industrial robotics focused on **absolute accuracy**. The goal was to track a target joint configuration $q_d$ with zero error, modeling the robot as an infinitely stiff system using high-gain PD controllers.
+Historically, industrial robotics focused on **absolute accuracy**. The goal was to track a target joint configuration $q_d$ with zero error, modeling the robot as an infinitely stiff system.
 
-However, as robots move out of cages and into unstructured environments (e.g., collaborative robots, service robots), this paradigm has shifted. A stiff robot cannot safely interact with humans or handle contact with uncertain environments. If a position-controlled robot hits a wall, it tries to push through it, leading to infinite force and potential damage.
+However, as robots are more getting into human lives, interactions between robots and human/unstructured environment are ineviatble, this paradigm has shifted. A traditonal stiff robot cannot safely interact with humans or handle contact with uncertain environments. If a position-controlled robot hits a wall, it tries to push through it, leading to critcal force and damage. If it was a human, not a wall, human can be able to get injured by unflexible robots. This is why a compliant and safe robot contorl is needed.
+
+Recently, the surge of the humanoid robot and quadruped robot shows the importance of the interaction between humand and robot(HRI). All of these robots which need to react with environment, adapt PD controller for their each actuator, ensuring compliant and safe inteaction, and this is the key for HRI
+
+In this
+
 
 * **Evolution:** Position Control $\rightarrow$ Force Control $\rightarrow$ **Impedance/Admittance Control**
 * **Key Insight:** We are no longer controlling the *position* alone; we are controlling the **interaction behavior** (dynamic relationship) between the robot and its environment.

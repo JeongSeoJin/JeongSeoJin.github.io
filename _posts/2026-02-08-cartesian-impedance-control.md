@@ -43,11 +43,11 @@ In this article, I will delve into **PD Control**, **Cartesian Impedance Control
 * **Key Words:** Human-Robot Interaction(HRI), Compliance, Safety, PD Control, Impedance Control, Trajectory Generation and Robot Dynamics
 
 ---
-## 2. Introduction: What is Impedance Control?
+## 2. Introduction: How do we make robot behavior flexible? & What is Impedance Control?
 
 According to **Neville Hogan (1985)**, impedance control imposes a dynamic relationship between the manipulator motion and the external interaction forces.
 
-Instead of commanding the robot to "go to point A" regardless of the environment, we command it to **"behave like a virtual spring-damper system."**
+Instead of commanding the robot to "go to point A" regardless of the environment, we command it to **"behave like a virtual spring-damper system."** **This is the key of compliant interactions**.
 
 * **Causality:** Motion (Input) $\rightarrow$ Force (Output).
 * **Physical Intuition:** The robot acts as if it is attached to a virtual equilibrium point via a mechanical spring and damper.
@@ -63,34 +63,44 @@ Instead of commanding the robot to "go to point A" regardless of the environment
 
 Before diving into complex task-space behaviors, we must understand the most fundamental form: **Joint-Space Impedance Control**.
 
-In this scheme, each joint is treated as if it has a torsional spring and damper attached to it. The control law is straightforward:
+In this scheme, each joint is treated as if it has a torsional spring and damper attached to it. However, there is a gap between theory and practice.
 
-$$\tau = K_q (q_d - q) + D_q (\dot{q}_d - \dot{q}) + g(q)$$
+### Theoretical Joint-Space Impedance Control
 
-* $\tau$: Joint torques
-* $K_q, D_q$: Joint stiffness and damping matrices (usually diagonal)
-* $q_d, q$: Desired and actual joint angles
-* $g(q)$: Gravity compensation (Crucial for "weightless" behavior)
+In an ideal world, we want to shape the full dynamic behavior including inertia:
 
+$$\tau = M_d (\ddot{q}_d - \ddot{q}) + D_d (\dot{q}_d - \dot{q}) + K_d (q_d - q) + \hat{g}(q)$$
 
+* $\tau$: Joint torque command
+* $M_d, D_d, K_d$: Desired Inertia, Damping, and Stiffness matrices
+* $\hat{g}(q)$: Gravity Compensation term
 
-### Pros & Cons
-* **Pros:** It is computationally cheap and easy to implement. It works exceptionally well for locomotion (walking robots) where joint compliance absorbs ground impact shocks.
-* **Cons:** It lacks intuition in the Cartesian world. We live in a Cartesian space (X, Y, Z), not in a Joint space ($q_1, q_2, \dots$).
-    * *Problem:* Setting high stiffness on joint 1 ($q_1$) does not guarantee high stiffness in the Z-direction of the end-effector. The relationship is highly nonlinear and configuration-dependent.
+### Joint-Space Impedance Control in the Real World
 
+In practice, shaping the inertia ($M_d$) is challenging. Measuring angular acceleration ($\ddot{q}$) requires double differentiation of the encoder signal, which drastically **amplifies high-frequency sensor noise**.
+Therefore, practical impedance controllers often drop the inertial term and rely on a **PD-type law with gravity compensation**:
+
+$$\tau = K_d (q_d - q) + D_d (\dot{q}_d - \dot{q}) + \hat{g}(q)$$
+
+* **Why PD and not PID?** We intentionally exclude the Integral (I) term. During physical interaction, an I-term would accumulate error (Integral Wind-up), causing the robot to exert excessive force and overshoot when contact is broken, which is dangerous for HRI.
+* "Many people confuse Impedance Control with simple PD control. While **mathematical formulations are identical**, the design philosophy **differs**. **PD control aims for infinite stiffness** to reject disturbances, whereas **Impedance Control aims for finite**, designed stiffness to accommodate interactions."
+
+### Pros & Cons of Joint-Space Impedance Control
+* **Pros:** Computationally efficient and robust. It works exceptionally well for **locomotion**, where joint compliance naturally absorbs ground impact shocks without complex force sensing.
+* **Cons:** It lacks intuition in the Cartesian world.
+    * **Problem:** Setting high stiffness on Joint 1 ($q_1$) does not guarantee stiffness in the Z-direction of the end-effector. The relationship is highly nonlinear and configuration-dependent.
 ---
 
-## 4. The Bridge: Why Cartesian Impedance Control?
+## 4. The Bridge Between Joint-Space to Cartesian-Space: Why Cartesian Impedance Control? & What is Jacobian Matrix?
 
 **"We interact with the world in coordinates, not in angles."**
 
 Imagine you are polishing a table. You need the robot to be **stiff** in the vertical direction (to press down) but **compliant** in the horizontal direction (to glide smoothly).
-With Joint-Space Impedance, achieving this "Directional Stiffness" is mathematically painful because joint stiffnesses are coupled.
+With Joint-Space Impedance, achieving this "Directional Stiffness" is mathematically painful because joint stiffnesses are coupled. Thus we cannot decompose applied force of the end-effector as vectors independently in XYZ coordinate.
 
 This is where **Cartesian Impedance Control** comes in. We project our desired behavior from the Task Space to the Joint Space using the **Jacobian Transpose**.
 
-### The Control Law
+### Cartesian-Space Impedance Control
 Instead of defining stiffness at the joints, we define it at the end-effector:
 
 $$F_{task} = K_x (x_d - x) + D_x (\dot{x}_d - \dot{x})$$
@@ -105,51 +115,6 @@ By using the Jacobian Transpose ($J^T$), we can intuitively design the robot's i
 ---
 
 *(Note: Detailed Trajectory Generation strategies for smooth equilibrium point movement will be covered in the next article: **"Part 2: Planning for Interaction"**)*
-
-
-
-
-
-
-
-## 4. Necessity of Trajectory Generation (Smoothness is Safety)
-
-One common pitfall in impedance control is feeding a step input or a "Trapezoidal Velocity Profile (TVP)" as the desired trajectory $x_d$.
-
-### Why TVP is dangerous in Impedance Control
-* **The Problem:** TVP has discontinuous acceleration (infinite jerk) at the corners of the velocity profile.
-* **The Consequence:** Since torque is directly related to acceleration ($\tau \propto \ddot{x}$), a jump in acceleration causes a **torque spike**.
-* **Result:** This induces severe vibrations, damages the gearbox, and creates unsafe, jerky motions in HRI scenarios.
-
-### The Solution: Minimum Jerk Trajectory
-To ensure smooth interaction, we must use trajectories with $C^2$ continuity (continuous acceleration). The **Minimum Jerk Trajectory** minimizes the change of acceleration, ensuring that the generated torque is smooth and the robot's behavior remains compliant and safe.
-
----
-
-## 5. Robot Dynamics for Sophisticated Control
-
-A simple PD-like law ($K_p e + K_d \dot{e}$) is insufficient for high-performance manipulation. We must account for the robot's intrinsic dynamics:
-
-$$
-\tau_{cmd} = \underbrace{g(q) + C(q,\dot{q})\dot{q}}_{\text{Dynamics Compensation}} + J^T F_{impedance}
-$$
-
-### The Importance of Gravity Compensation
-Gravity compensation $g(q)$ is critical. The impedance controller assumes the robot is "weightless."
-* **Mathematical Insight:** If the gravity model is imperfect ($\hat{g}(q) \neq g_{real}(q)$), a residual torque $\Delta \tau_g$ remains.
-* **Steady-State Error:** At equilibrium ($\ddot{x}=0, \dot{x}=0$), the spring force must fight this residual gravity:
-    $$
-    K_d \cdot e_{ss} = J^{-T} \Delta \tau_g
-    $$
-    This results in a **steady-state error ($e_{ss}$)**, causing the robot to "sag" under its own weight. To minimize this without increasing stiffness (which reduces compliance), precise dynamic identification is required.
-
----
-
-## 6. Conclusion
-
-Impedance control is not just a control algorithm; it is a philosophy of **compliant interaction**. By shaping the robot's energy exchange with the environment, we enable safer and more versatile robotic applications.
-
-However, fixed-gain impedance control has limitations. Future research focuses on **Variable Impedance Control (VIC)** and **Learning-based Impedance**, where the robot intelligently adapts its stiffness and damping based on the task requirements and environmental contact.
 
 > *"We are not just building robots that move; we are building robots that feel."*
 

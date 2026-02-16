@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Beyond Position Control: The Philosophy of Interaction"
+title: "[Part1] Beyond Position Control: The Philosophy of Interaction"
 date: 2026-02-08 10:14:00
-description: Basic PD Controller for Robot 
+description: Cartesian-Space Impedance Control for compliance
 tags: Impedance-Control PD-Control Dynamics
 categories: project
 thumbnail: assets/img/impedance-control/image.png
@@ -124,7 +124,4 @@ By utilizing the **Jacobian Transpose ($J^T$)**, we can intuitively design the r
 *(Note: In the next article, **"Part 2: Planning for Interaction,"** we will discuss Trajectory Generation strategies to move the virtual equilibrium point ($x_d$) smoothly, ensuring stable contact transitions.)*
 
 > *"We are not just building robots that move; we are building robots that feel."*
-
-
-Impedance Control/PD Control 과 QDD Actuator 사이의 상관관계 언급. 
 

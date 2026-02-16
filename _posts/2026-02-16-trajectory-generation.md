@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Beyond Position Control: The Philosophy of Interaction"
+title: "[Part2] Beyond Position Control: The Philosophy of Interaction"
 date: 2026-02-08 10:14:00
-description: Basic PD Controller for Robot 
+description: Trajectory Generation of End-Effector
 tags: Impedance-Control PD-Control Dynamics
 categories: project
 thumbnail: assets/img/impedance-control/image.png

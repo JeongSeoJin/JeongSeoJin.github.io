@@ -132,17 +132,36 @@ By utilizing the **Jacobian Transpose ($J^T$)**, we can intuitively design the r
 
 ---
 
-## Implementation of The Cartesian-Space Impedance Control
+## 5. Implementation Case Study: The Danger of Step Inputs
 
-To demonstrate cartesian-space impedance control intuitively, A simple double pendulum cartesian-space impedance control could be helpful. 
+To validate the Cartesian Impedance Control theory, a simulation was conducted using a 2-DOF planar manipulator (Double Pendulum). The objective was to pass through four discrete waypoints in the Cartesian plane using the impedance law derived above.
 
 {% include video.liquid path="assets/img/impedance-control/impedance_control_dashboard_std.mp4" class="img-fluid rounded z-depth-1" controls=true %}
 <div class="caption">
-    Figure 2. A simplied doulbe link arm performs cartesian-space impedance control in two dimentional plane(X and Y coordinate) by passing through discrete four waypoint
+    Figure 2. A 2-DOF planar manipulator performing Cartesian-Space Impedance Control. The robot attempts to track discrete waypoints (Green) using the impedance law.
 </div>
 
+### Analysis of the Behavior
+As observed in the telemetry dashboard, the **'Force X'** and **'Force Y'** graphs exhibit sharp, dangerous spikes.
 
-*(Note: In the next article, **"Part 2: Planning for Interaction,"** we will discuss Trajectory Generation strategies to move the virtual equilibrium point ($x_d$) smoothly, ensuring stable contact transitions.)*
+This phenomenon occurs because the waypoints are provided as **Step Inputs**.
+Recall the impedance equation:
+$$F_{task} = K_x (x_d - x) + D_x (\dot{x}_d - \dot{x})$$
+
+When the desired position $x_d$ changes instantaneously (Step), the error $(x_d - x)$ jumps from $0$ to a large value in a single time step. Physically, this is equivalent to **teleporting the virtual spring's anchor point**.
+Since the spring is instantly stretched, it generates a massive force impulse. This contradicts the very purpose of impedance control: **Safety and Compliance**.
+
+**Conclusion:** Simply implementing the impedance law is not enough. To prevent these force spikes, we must ensure that the virtual equilibrium point ($x_d$) moves smoothly over time. This necessitates **Trajectory Generation**.
+
+---
+
+## Conclusion & Future Work
+
+In this article, we explored the philosophy and mathematics of **Impedance Control**. We transitioned from the rigid world of Position Control to the compliant world of Interaction Control, and extended our reach from Joint Space to Cartesian Space.
+
+However, as shown in the implementation case study, defining the impedance behavior is only half the battle. Without a smooth reference trajectory, even a compliant robot can behave dangerously.
+
+In the next article, **"Part 2: Planning for Interaction,"** we will dive into **Trajectory Generation strategies** (such as Minimum Jerk and Trapezoidal Velocity Profiles) to move the virtual equilibrium point smoothly, ensuring stable and safe contact transitions.
 
 > *"We are not just building robots that move; we are building robots that feel."*
 

@@ -38,6 +38,17 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
+            window.location.href = "/blog/2026/trajectory-generation/";
+          
+        },
+      },{id: "post-beyond-position-control-the-philosophy-of-interaction",
+        
+          title: "Beyond Position Control: The Philosophy of Interaction",
+        
+        description: "Basic PD Controller for Robot",
+        section: "Posts",
+        handler: () => {
+          
             window.location.href = "/blog/2026/cartesian-impedance-control/";
           
         },

@@ -103,7 +103,7 @@ $$\tau = K_d (q_d - q) + D_d (\dot{q}_d - \dot{q}) + \hat{g}(q)$$
   loading="eager" 
   path="assets/img/impedance-control/fig1.png" 
   class="img-fluid rounded z-depth-1" 
-  caption="Cartesian-Space Impedance Control: <a href='https://www.youtube.com/watch?v=rFSXDaZQ4Qo'>IRIM LAB KOREATECH</a>" 
+  caption="Figure 1. LIMS3-AMBIDEX: Cartesian Space Impedance Control (<a href='https://www.youtube.com/watch?v=rFSXDaZQ4Qo'>IRIM LAB KOREATECH</a>)" 
 %}
  
 While Joint-Space control is effective for internal stability, it fundamentally disconnects from the geometric nature of real-world interaction. Consider a surface polishing task: the robot must be **stiff** in the vertical direction (Z-axis) to apply pressure, yet **compliant** in the horizontal plane (X-Y axes) to glide smoothly.
@@ -134,8 +134,12 @@ By utilizing the **Jacobian Transpose ($J^T$)**, we can intuitively design the r
 
 ## Implementation of The Cartesian-Space Impedance Control
 
-To demonstrate cartesian-space impedance control intuitively, A simple double pendulum cartesian-space impedance control could be helpful.
+To demonstrate cartesian-space impedance control intuitively, A simple double pendulum cartesian-space impedance control could be helpful. 
 
+{% include video.liquid path="assets/img/impedance-control/impedance_control_dashboard_std.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+<div class="caption">
+    Figure 2. A simplied doulbe link arm performs cartesian-space impedance control in two dimentional plane(X and Y coordinate) by passing through discrete four waypoint
+</div>
 
 
 *(Note: In the next article, **"Part 2: Planning for Interaction,"** we will discuss Trajectory Generation strategies to move the virtual equilibrium point ($x_d$) smoothly, ensuring stable contact transitions.)*

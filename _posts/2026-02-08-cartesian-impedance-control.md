@@ -43,45 +43,74 @@ In this article, I will delve into **PD Control**, **Cartesian Impedance Control
 * **Key Words:** Human-Robot Interaction(HRI), Compliance, Safety, PD Control, Impedance Control, Trajectory Generation and Robot Dynamics
 
 ---
-
 ## 2. Introduction: What is Impedance Control?
 
-According to Neville Hogan (1985), impedance control imposes a dynamic relationship between the manipulator motion and the external interaction forces.
+According to **Neville Hogan (1985)**, impedance control imposes a dynamic relationship between the manipulator motion and the external interaction forces.
 
-Instead of commanding the robot to "go to point A," we command it to **"behave like a virtual spring-damper system."**
+Instead of commanding the robot to "go to point A" regardless of the environment, we command it to **"behave like a virtual spring-damper system."**
+
 * **Causality:** Motion (Input) $\rightarrow$ Force (Output).
-* **Physical Intuition:** The robot acts as if it is attached to a virtual equilibrium point via a spring and a damper.
+* **Physical Intuition:** The robot acts as if it is attached to a virtual equilibrium point via a mechanical spring and damper.
 
 ### Why do we use it?
-1.  **Safety:** Upon collision, the robot compliantly deviates from its path, reducing the impact force.
-2.  **Contact Stability:** Unlike position control, which becomes unstable during hard contact, impedance control maintains stability by regulating the contact force through stiffness.
-3.  **Uncertainty Handling:** It allows the robot to perform tasks like "peg-in-hole" insertion without knowing the exact hole location, purely by mechanical compliance.
+1.  **Safety:** Upon collision, the robot compliantly deviates from its path, reducing the impact force and preventing damage to both the environment and itself.
+2.  **Contact Stability:** Unlike position control, which becomes unstable during hard contact (due to integral wind-up or high gains), impedance control maintains stability by regulating the contact force through stiffness. This is essential for **humanoid and quadruped robots** walking on unpredictable terrains.
+3.  **Uncertainty Handling:** It allows the robot to perform tasks like "peg-in-hole" insertion without knowing the exact hole location, purely by leveraging mechanical compliance.
 
 ---
 
-## 3. The Basics of Impedance Controller
+## 3. The Foundation: Joint-Space Impedance Control
 
-In Cartesian space, the desired dynamic behavior is described as:
+Before diving into complex task-space behaviors, we must understand the most fundamental form: **Joint-Space Impedance Control**.
 
-$$
-M_d \ddot{e} + D_d \dot{e} + K_d e = F_{ext}
-$$
+In this scheme, each joint is treated as if it has a torsional spring and damper attached to it. The control law is straightforward:
 
-Where:
-* $e = x - x_d$ (Tracking error)
-* $M_d, D_d, K_d$: Desired virtual inertia, damping, and stiffness matrices.
-* $F_{ext}$: External force applied to the end-effector.
+$$\tau = K_q (q_d - q) + D_q (\dot{q}_d - \dot{q}) + g(q)$$
 
-### Control Law Implementation
-For torque-controlled robots, this is typically implemented via Inverse Dynamics:
+* $\tau$: Joint torques
+* $K_q, D_q$: Joint stiffness and damping matrices (usually diagonal)
+* $q_d, q$: Desired and actual joint angles
+* $g(q)$: Gravity compensation (Crucial for "weightless" behavior)
 
-$$
-\tau_{cmd} = J^T(q) \left( K_d(x_d - x) + D_d(\dot{x}_d - \dot{x}) \right) + \tau_{dynamics}
-$$
 
-The Jacobian Transpose $J^T$ maps the Cartesian force (spring-damper force) into Joint torques.
+
+### Pros & Cons
+* **Pros:** It is computationally cheap and easy to implement. It works exceptionally well for locomotion (walking robots) where joint compliance absorbs ground impact shocks.
+* **Cons:** It lacks intuition in the Cartesian world. We live in a Cartesian space (X, Y, Z), not in a Joint space ($q_1, q_2, \dots$).
+    * *Problem:* Setting high stiffness on joint 1 ($q_1$) does not guarantee high stiffness in the Z-direction of the end-effector. The relationship is highly nonlinear and configuration-dependent.
 
 ---
+
+## 4. The Bridge: Why Cartesian Impedance Control?
+
+**"We interact with the world in coordinates, not in angles."**
+
+Imagine you are polishing a table. You need the robot to be **stiff** in the vertical direction (to press down) but **compliant** in the horizontal direction (to glide smoothly).
+With Joint-Space Impedance, achieving this "Directional Stiffness" is mathematically painful because joint stiffnesses are coupled.
+
+This is where **Cartesian Impedance Control** comes in. We project our desired behavior from the Task Space to the Joint Space using the **Jacobian Transpose**.
+
+### The Control Law
+Instead of defining stiffness at the joints, we define it at the end-effector:
+
+$$F_{task} = K_x (x_d - x) + D_x (\dot{x}_d - \dot{x})$$
+
+Then, we map this virtual force to joint torques:
+
+$$\tau = J^T(q) F_{task} + g(q)$$
+$$\tau = J^T(q) \left( K_x (x_d - x) + D_x (\dot{x}_d - \dot{x}) \right) + g(q)$$
+
+By using the Jacobian Transpose ($J^T$), we can intuitively design the robot's interaction properties in the X, Y, and Z directions independently. This is the standard for manipulation tasks.
+
+---
+
+*(Note: Detailed Trajectory Generation strategies for smooth equilibrium point movement will be covered in the next article: **"Part 2: Planning for Interaction"**)*
+
+
+
+
+
+
 
 ## 4. Necessity of Trajectory Generation (Smoothness is Safety)
 
@@ -123,3 +152,6 @@ Impedance control is not just a control algorithm; it is a philosophy of **compl
 However, fixed-gain impedance control has limitations. Future research focuses on **Variable Impedance Control (VIC)** and **Learning-based Impedance**, where the robot intelligently adapts its stiffness and damping based on the task requirements and environmental contact.
 
 > *"We are not just building robots that move; we are building robots that feel."*
+
+
+Impedance Control/PD Control 과 QDD Actuator 사이의 상관관계 언급. 

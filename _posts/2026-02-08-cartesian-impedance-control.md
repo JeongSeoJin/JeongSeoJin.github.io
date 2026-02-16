@@ -88,14 +88,15 @@ $$\tau = K_d (q_d - q) + D_d (\dot{q}_d - \dot{q}) + \hat{g}(q)$$
 ### Pros & Cons of Joint-Space Impedance Control
 * **Pros:** Computationally efficient and robust. It works exceptionally well for **locomotion**, where joint compliance naturally absorbs ground impact shocks without complex force sensing.
 * **Cons:** It lacks intuition in the Cartesian world.
-    * **Problem:** Setting high stiffness on Joint 1 ($q_1$) does not guarantee stiffness in the Z-direction of the end-effector. The relationship is highly nonlinear and configuration-dependent.
+  * **Problem:** Setting high stiffness on Joint 1 ($q_1$) does not guarantee stiffness in the Z-direction of the end-effector. The relationship is highly nonlinear and configuration-dependent.
+
 ---
 
 ## 4. From Joint Space to Task Space: The Necessity of Cartesian Impedance
 
 **"Tasks are defined in coordinates, not in angles."**
 
-While Joint-Space control is effective for internal stability, it fundamentally disconnects from the geometric nature of real-world interaction. Consider a surface polishing task: the robot must be **stiff** in the vertical direction (Z-axis) to apply pressure, yet **compliant** in the horizontal plane (X-Y axes) to glide smoothly without jamming.
+While Joint-Space control is effective for internal stability, it fundamentally disconnects from the geometric nature of real-world interaction. Consider a surface polishing task: the robot must be **stiff** in the vertical direction (Z-axis) to apply pressure, yet **compliant** in the horizontal plane (X-Y axes) to glide smoothly.
 
 Achieving this "Directional Stiffness" using purely Joint-Space Impedance is mathematically non-trivial. Since the relationship between joint angles and end-effector position is nonlinear, a diagonal joint stiffness matrix ($K_q$) results in a coupled, non-diagonal stiffness behavior at the end-effector. In other words, we cannot independently decompose the interaction forces into orthogonal Cartesian vectors.
 

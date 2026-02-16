@@ -142,7 +142,7 @@ To validate the Cartesian Impedance Control theory, a simulation was conducted u
 </div>
 
 ### Analysis of the Behavior
-As observed in the telemetry dashboard, the **'Force X'** and **'Force Y'** graphs exhibit sharp, dangerous spikes.
+As observed in the dashboard, the **'Force X'** and **'Force Y'** graphs exhibit sharp, dangerous spikes.
 
 This phenomenon occurs because the waypoints are provided as **Step Inputs**.
 Recall the impedance equation:
@@ -151,7 +151,7 @@ $$F_{task} = K_x (x_d - x) + D_x (\dot{x}_d - \dot{x})$$
 When the desired position $x_d$ changes instantaneously (Step), the error $(x_d - x)$ jumps from $0$ to a large value in a single time step. Physically, this is equivalent to **teleporting the virtual spring's anchor point**.
 Since the spring is instantly stretched, it generates a massive force impulse. This contradicts the very purpose of impedance control: **Safety and Compliance**.
 
-**Conclusion:** Simply implementing the impedance law is not enough. To prevent these force spikes, we must ensure that the virtual equilibrium point ($x_d$) moves smoothly over time. This necessitates **Trajectory Generation**.
+Therefore, simply implementing the impedance law is not enough. To prevent these force spikes, we must ensure that the virtual equilibrium point ($x_d$) moves smoothly over time. This necessitates **Trajectory Generation**.
 
 ---
 
@@ -161,7 +161,7 @@ In this article, we explored the philosophy and mathematics of **Impedance Contr
 
 However, as shown in the implementation case study, defining the impedance behavior is only half the battle. Without a smooth reference trajectory, even a compliant robot can behave dangerously.
 
-In the next article, **"Part 2: Planning for Interaction,"** we will dive into **Trajectory Generation strategies** (such as Minimum Jerk and Trapezoidal Velocity Profiles) to move the virtual equilibrium point smoothly, ensuring stable and safe contact transitions.
+In the next article, **"Part2: Planning for Interaction,"** we will dive into **Trajectory Generation strategies** (such as Minimum Jerk and Trapezoidal Velocity Profiles) to move the virtual equilibrium point smoothly, ensuring stable and safe contact transitions.
 
 > *"We are not just building robots that move; we are building robots that feel."*
 

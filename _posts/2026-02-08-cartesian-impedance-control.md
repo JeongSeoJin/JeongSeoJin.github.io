@@ -96,6 +96,13 @@ $$\tau = K_d (q_d - q) + D_d (\dot{q}_d - \dot{q}) + \hat{g}(q)$$
 
 **"Tasks are defined in coordinates, not in angles."**
 
+{% include figure.liquid 
+  loading="eager" 
+  path="assets/img/impedance-control/fig1.png" 
+  class="img-fluid rounded z-depth-1" 
+  caption="Cartesian-Space Impedance Control: <a href='https://www.youtube.com/watch?v=rFSXDaZQ4Qo'>Etonm Motor</a>" 
+%}
+
 While Joint-Space control is effective for internal stability, it fundamentally disconnects from the geometric nature of real-world interaction. Consider a surface polishing task: the robot must be **stiff** in the vertical direction (Z-axis) to apply pressure, yet **compliant** in the horizontal plane (X-Y axes) to glide smoothly.
 
 Achieving this "Directional Stiffness" using purely Joint-Space Impedance is mathematically non-trivial. Since the relationship between joint angles and end-effector position is nonlinear, a diagonal joint stiffness matrix ($K_q$) results in a coupled, non-diagonal stiffness behavior at the end-effector. In other words, we cannot independently decompose the interaction forces into orthogonal Cartesian vectors.

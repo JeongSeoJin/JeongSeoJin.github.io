@@ -3,9 +3,9 @@ layout: post
 title: "[Part1] Beyond Position Control: The Philosophy of Interaction"
 date: 2026-02-08 10:14:00
 description: Cartesian-Space Impedance Control for compliance
-tags: Impedance-Control PD-Control Dynamics
+tags: Impedance-Control Robot-Dynamics
 categories: project
-thumbnail: assets/img/impedance-control/image.png
+thumbnail: assets/img/impedance-control/fig1.png
 giscus_comments: true
 related_posts: true
 toc:
@@ -28,6 +28,8 @@ toc:
 
 > **Subtitle:** Why Cartesian Impedance Control is the key to safe Human-Robot Interaction (HRI).
 
+---
+
 ## 1. Background: Motivation and Evolution
 
 Historically, industrial robotics prioritized **absolute accuracy**. The primary objective was to track a target joint configuration $q_d$ with zero error, effectively modeling the robot as an infinitely stiff system.
@@ -43,6 +45,7 @@ In this article, I will delve into **PD Control**, **Cartesian Impedance Control
 * **Key Words:** Human-Robot Interaction(HRI), Compliance, Safety, PD Control, Impedance Control, Trajectory Generation and Robot Dynamics
 
 ---
+
 ## 2. Introduction: How do we make robot behavior flexible? & What is Impedance Control?
 
 According to **Neville Hogan (1985)**, impedance control imposes a dynamic relationship between the manipulator motion and the external interaction forces.
@@ -100,9 +103,9 @@ $$\tau = K_d (q_d - q) + D_d (\dot{q}_d - \dot{q}) + \hat{g}(q)$$
   loading="eager" 
   path="assets/img/impedance-control/fig1.png" 
   class="img-fluid rounded z-depth-1" 
-  caption="Cartesian-Space Impedance Control: <a href='https://www.youtube.com/watch?v=rFSXDaZQ4Qo'>Etonm Motor</a>" 
+  caption="Cartesian-Space Impedance Control: <a href='https://www.youtube.com/watch?v=rFSXDaZQ4Qo'>IRIM LAB KOREATECH</a>" 
 %}
-
+ 
 While Joint-Space control is effective for internal stability, it fundamentally disconnects from the geometric nature of real-world interaction. Consider a surface polishing task: the robot must be **stiff** in the vertical direction (Z-axis) to apply pressure, yet **compliant** in the horizontal plane (X-Y axes) to glide smoothly.
 
 Achieving this "Directional Stiffness" using purely Joint-Space Impedance is mathematically non-trivial. Since the relationship between joint angles and end-effector position is nonlinear, a diagonal joint stiffness matrix ($K_q$) results in a coupled, non-diagonal stiffness behavior at the end-effector. In other words, we cannot independently decompose the interaction forces into orthogonal Cartesian vectors.
@@ -128,6 +131,12 @@ $$\tau_{cmd} = J^T(q) \left( K_x (x_d - x) + D_x (\dot{x}_d - \dot{x}) \right) +
 By utilizing the **Jacobian Transpose ($J^T$)**, we can intuitively design the robot's interaction properties in the X, Y, and Z directions independently. This "Stiffness Decoupling" is the standard requirement for advanced manipulation tasks.
 
 ---
+
+## Implementation of The Cartesian-Space Impedance Control
+
+To demonstrate cartesian-space impedance control intuitively, A simple double pendulum cartesian-space impedance control could be helpful.
+
+
 
 *(Note: In the next article, **"Part 2: Planning for Interaction,"** we will discuss Trajectory Generation strategies to move the virtual equilibrium point ($x_d$) smoothly, ensuring stable contact transitions.)*
 

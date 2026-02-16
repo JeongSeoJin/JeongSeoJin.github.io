@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[Part2] Beyond Position Control: The Philosophy of Interaction"
+title: "[Part2] Planning for Interaction: The Trajectory Generation of End-Effector"
 date: 2026-02-08 10:14:00
-description: Trajectory Generation of End-Effector
-tags: Impedance-Control PD-Control Dynamics
+description: Minimum Jerk Trajectory Generation
+tags: Impedance-Control Robot-Dynamics Trajectory-Generation
 categories: project
 thumbnail: assets/img/impedance-control/image.png
 giscus_comments: true

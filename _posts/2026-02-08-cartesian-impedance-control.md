@@ -91,32 +91,40 @@ $$\tau = K_d (q_d - q) + D_d (\dot{q}_d - \dot{q}) + \hat{g}(q)$$
     * **Problem:** Setting high stiffness on Joint 1 ($q_1$) does not guarantee stiffness in the Z-direction of the end-effector. The relationship is highly nonlinear and configuration-dependent.
 ---
 
-## 4. The Bridge Between Joint-Space to Cartesian-Space: Why Cartesian Impedance Control? & What is Jacobian Matrix?
+## 4. From Joint Space to Task Space: The Necessity of Cartesian Impedance
 
-**"We interact with the world in coordinates, not in angles."**
+**"Tasks are defined in coordinates, not in angles."**
 
-Imagine you are polishing a table. You need the robot to be **stiff** in the vertical direction (to press down) but **compliant** in the horizontal direction (to glide smoothly).
-With Joint-Space Impedance, achieving this "Directional Stiffness" is mathematically painful because joint stiffnesses are coupled. Thus we cannot decompose applied force of the end-effector as vectors independently in XYZ coordinate.
+While Joint-Space control is effective for internal stability, it fundamentally disconnects from the geometric nature of real-world interaction. Consider a surface polishing task: the robot must be **stiff** in the vertical direction (Z-axis) to apply pressure, yet **compliant** in the horizontal plane (X-Y axes) to glide smoothly without jamming.
 
-This is where **Cartesian Impedance Control** comes in. We project our desired behavior from the Task Space to the Joint Space using the **Jacobian Transpose**.
+Achieving this "Directional Stiffness" using purely Joint-Space Impedance is mathematically non-trivial. Since the relationship between joint angles and end-effector position is nonlinear, a diagonal joint stiffness matrix ($K_q$) results in a coupled, non-diagonal stiffness behavior at the end-effector. In other words, we cannot independently decompose the interaction forces into orthogonal Cartesian vectors.
 
-### Cartesian-Space Impedance Control
-Instead of defining stiffness at the joints, we define it at the end-effector:
+To address this, we employ **Cartesian Impedance Control**. This method allows us to define the desired dynamic behavior directly in the Task Space and project it down to the Joint Space using the **Jacobian Transpose**.
+
+### Cartesian-Space Impedance Formulation
+
+Instead of defining stiffness at the joints, we define a virtual spring-damper system at the end-effector:
 
 $$F_{task} = K_x (x_d - x) + D_x (\dot{x}_d - \dot{x})$$
 
-Then, we map this virtual force to joint torques:
+Where $K_x$ and $D_x$ are diagonal matrices representing stiffness and damping in the Cartesian axes.
 
-$$\tau = J^T(q) F_{task} + g(q)$$
-$$\tau = J^T(q) \left( K_x (x_d - x) + D_x (\dot{x}_d - \dot{x}) \right) + g(q)$$
+To realize this force physically, we map the task-space force ($F_{task}$) to joint torques ($\tau$) using the relationship derived from the Principle of Virtual Work ($\tau = J^T F$):
 
-By using the Jacobian Transpose ($J^T$), we can intuitively design the robot's interaction properties in the X, Y, and Z directions independently. This is the standard for manipulation tasks.
+$$\tau_{cmd} = J^T(q) F_{task} + g(q)$$
+
+Substituting the impedance law:
+
+$$\tau_{cmd} = J^T(q) \left( K_x (x_d - x) + D_x (\dot{x}_d - \dot{x}) \right) + g(q)$$
+
+By utilizing the **Jacobian Transpose ($J^T$)**, we can intuitively design the robot's interaction properties in the X, Y, and Z directions independently. This "Stiffness Decoupling" is the standard requirement for advanced manipulation tasks.
 
 ---
 
-*(Note: Detailed Trajectory Generation strategies for smooth equilibrium point movement will be covered in the next article: **"Part 2: Planning for Interaction"**)*
+*(Note: In the next article, **"Part 2: Planning for Interaction,"** we will discuss Trajectory Generation strategies to move the virtual equilibrium point ($x_d$) smoothly, ensuring stable contact transitions.)*
 
 > *"We are not just building robots that move; we are building robots that feel."*
 
 
 Impedance Control/PD Control 과 QDD Actuator 사이의 상관관계 언급. 
+

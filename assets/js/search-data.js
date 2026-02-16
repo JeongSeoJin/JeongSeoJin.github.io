@@ -30,22 +30,22 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-beyond-position-control-the-philosophy-of-interaction",
+        },{id: "post-part2-beyond-position-control-the-philosophy-of-interaction",
         
-          title: "Beyond Position Control: The Philosophy of Interaction",
+          title: "[Part2] Beyond Position Control: The Philosophy of Interaction",
         
-        description: "Basic PD Controller for Robot",
+        description: "Trajectory Generation of End-Effector",
         section: "Posts",
         handler: () => {
           
             window.location.href = "/blog/2026/trajectory-generation/";
           
         },
-      },{id: "post-beyond-position-control-the-philosophy-of-interaction",
+      },{id: "post-part1-beyond-position-control-the-philosophy-of-interaction",
         
-          title: "Beyond Position Control: The Philosophy of Interaction",
+          title: "[Part1] Beyond Position Control: The Philosophy of Interaction",
         
-        description: "Basic PD Controller for Robot",
+        description: "Cartesian-Space Impedance Control for compliance",
         section: "Posts",
         handler: () => {
           

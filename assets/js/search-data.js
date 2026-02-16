@@ -30,11 +30,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-part2-beyond-position-control-the-philosophy-of-interaction",
+        },{id: "post-part2-planning-for-interaction-the-trajectory-generation-of-end-effector",
         
-          title: "[Part2] Beyond Position Control: The Philosophy of Interaction",
+          title: "[Part2] Planning for Interaction: The Trajectory Generation of End-Effector",
         
-        description: "Trajectory Generation of End-Effector",
+        description: "Minimum Jerk Trajectory Generation",
         section: "Posts",
         handler: () => {
           

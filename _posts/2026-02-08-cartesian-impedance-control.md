@@ -142,7 +142,6 @@ To demonstrate cartesian-space impedance control intuitively, A simple double pe
 </div>
 
 
-
 *(Note: In the next article, **"Part 2: Planning for Interaction,"** we will discuss Trajectory Generation strategies to move the virtual equilibrium point ($x_d$) smoothly, ensuring stable contact transitions.)*
 
 > *"We are not just building robots that move; we are building robots that feel."*

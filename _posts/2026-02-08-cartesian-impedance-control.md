@@ -30,17 +30,17 @@ toc:
 
 ## 1. Background: Motivation and Evolution
 
-Historically, industrial robotics focused on **absolute accuracy**. The goal was to track a target joint configuration $q_d$ with zero error, modeling the robot as an infinitely stiff system.
+Historically, industrial robotics prioritized **absolute accuracy**. The primary objective was to track a target joint configuration $q_d$ with zero error, effectively modeling the robot as an infinitely stiff system.
 
-However, as robots are more getting into human lives, interactions between robots and human/unstructured environment are ineviatble, this paradigm has shifted. A traditonal stiff robot cannot safely interact with humans or handle contact with uncertain environments. If a position-controlled robot hits a wall, it tries to push through it, leading to critcal force and damage. If it was a human, not a wall, human can be able to get injured by unflexible robots. This is why a compliant and safe robot contorl is needed.
+However, as robots are increasingly integrated into human environments, the paradigm has shifted. Interactions between robots, humans, and unstructured environments are now **inevitable**. A traditional "stiff" robot cannot safely interact with humans or handle contact with uncertain surroundings. If a position-controlled robot collides with a rigid wall, it attempts to push through it with high torque, leading to critical damage. More importantly, if the obstacle were a human, this rigid behavior could result in severe injury. **This necessitates a compliant and safe control strategy.**
 
-Recently, the surge of the humanoid robot and quadruped robot shows the importance of the interaction between humand and robot(HRI). All of these robots which need to react with environment, adapt PD controller for their each actuator, ensuring compliant and safe inteaction, and this is the key for HRI
+Recently, the surge of **Humanoid** and **Quadruped robots** highlights the importance of safe Human-Robot Interaction (HRI) and dynamic locomotion. These systems, required to physically interact with the world, employ **Torque-based PD controllers** or **Impedance Control**. This ensures compliance against external disturbances, which is key for both safety in HRI and stability when walking on uneven terrains.
 
-In this
+In this article, I will delve into **PD Control**, **Cartesian Impedance Control**, and **Trajectory Generation**, with a strong focus on **Robot Dynamics**. I will also validate why these concepts are crucial for modern HRI and locomotive systems.
 
-
-* **Evolution:** Position Control $\rightarrow$ Force Control $\rightarrow$ **Impedance/Admittance Control**
-* **Key Insight:** We are no longer controlling the *position* alone; we are controlling the **interaction behavior** (dynamic relationship) between the robot and its environment.
+* **Evolution:** Position Control $\rightarrow$ **Impedance/Interaction Control**
+* **Key Insight:** We are no longer controlling the *position* alone; we are controlling the **dynamic behavior** of the interaction between the robot and its environment.
+* **Key Words:** Human-Robot Interaction(HRI), Compliance, Safety, PD Control, Impedance Control, Trajectory Generation and Robot Dynamics
 
 ---
 

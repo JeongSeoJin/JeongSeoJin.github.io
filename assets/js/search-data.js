@@ -30,18 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-part2-planning-for-interaction-the-trajectory-generation-of-end-effector",
-        
-          title: "[Part2] Planning for Interaction: The Trajectory Generation of End-Effector",
-        
-        description: "Minimum Jerk Trajectory Generation",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/trajectory-generation/";
-          
-        },
-      },{id: "post-part1-beyond-position-control-the-philosophy-of-interaction",
+        },{id: "post-part1-beyond-position-control-the-philosophy-of-interaction",
         
           title: "[Part1] Beyond Position Control: The Philosophy of Interaction",
         

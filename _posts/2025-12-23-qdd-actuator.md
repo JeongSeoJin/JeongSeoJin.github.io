@@ -186,9 +186,14 @@ Although this first prototype works successfully, four primary limitations were 
 
 1. Rotor Shaft Rigidity(misalignment issue): > The current aluminium rotor shaft is not a single component, this is constructed as a multi-part assembly fastened with bolts and nuts, rather than a single monolithic part. Consequently, the strong electromagnetic forces between the rotor and stator occasionally cause the central shaft to misalign during rotation, leading to an uneven air gap.
 
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/rotorcad.png" width="100%" max-width="250px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
+
 2. Absence of a Rotor Back-Iron: > The current rotor design does not incorporate a ferromagnetic back-iron or a Halbach array arrangement. I initially overlooked the critical role of the back-iron which concentrates the magnetic flux inward to maximize magnetic force. Without it, the actuator suffers from flux leakage, resulting in a maximum torque which is insufficient for highly dynamic robotic applications.
 
+
 3. Low Copper Fill Factor: > Since I hand-wound the stator, the copper wires are relatively sparsely packed compared to tightly wound commercial motors. This lower slot fill factor significantly limits the current-carrying capacity and overall torque density.
+
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/stator.jpg" width="100%" max-width="250px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 
 4. Structural Limits for Modularity: >The design of the housing is not suitable for 3d-printed modular actuator. Because the housings are 3D printed, I have to reinforce and modify the design to withstand external mechanical disturbances.
 

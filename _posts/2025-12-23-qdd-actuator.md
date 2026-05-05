@@ -112,7 +112,6 @@ I utilized Onshape 3D CAD to design a dual-disc cycloidal mechanism. The two cyc
 
 To maximize efficiency, I integrated rollers into the output pins. Unlike simple sliding contacts, these rollers minimize internal friction at the output stage, contributing to the system's back-drivability.
 
-<div style="display: flex; justify-content: space-around;">
 {% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/roller.jpg" width="100%" max-width="300px" alt="Actuator image 1" class="img-fluid rounded z-depth-1" %}
 
 For the current prototype, the gears, shafts and rotor are manufactured from CNC-machined Aluminum to verify the design with a high strength-to-weight ratio. (Note: The final goal of this project is to optimize the design for a fully 3D-printed, low-cost actuator for dynamic robots.)
@@ -130,11 +129,13 @@ To optimize torque density within the compact housing, I integrated a **custom-b
 For the stator, I utilized a standard 8110 stator core. To achieve the desired current capacity and fill factor, the stator was hand-wound using 0.4mm enameled copper wire. I applied a Wye (Star) termination with 6 parallel strands and 5 turns per tooth, following the optimal winding scheme calculated via open-source tools [[9]](#8-references).
 
 {% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/stator.jpg" width="100%" max-width="300px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
-</div>
 
 The motor adopts a 36N42P configuration (36 slots, 42 poles) to maximize torque output. For the rotor, 42 N52-grade Neodymium magnets were installed. These magnets were precisely bonded using high-strength epoxy (JB Weld) in an alternating polarity pattern (N-S-N-S) to maximize magnetic flux density and ensure structural integrity under high rotation speeds. Crucially, the rotor geometry was optimized to achieve a minimal air gap of 0.5mm. This tight clearance maximizes the magnetic flux linkage between the rotor and stator, thereby significantly enhancing the electromagnetic force and overall torque efficiency.
 
-{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/rotor.jpg" width="100%" max-width="300px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
+<div style="display: flex; justify-content: space-around;">
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image10.jpg" width="100%" max-width="300px" alt="Actuator image 1" class="img-fluid rounded z-depth-1" %}
+
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image11.jpg" width="100%" max-width="300px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 </div>
 
 
@@ -153,6 +154,13 @@ Precise assembly is critical to minimize backlash and ensure the longevity of th
 For the housing components printed in PA-CF12 (Carbon Fiber Nylon), I designed a 0.1mm interference fit. This accounts for the material's slight compliance and thermal shrinkage during printing, ensuring a secure press-fit without cracking the part.
 
 Conversely, for the CNC-machined Aluminum parts, a tighter 0.02mm interference fit was applied due to the metal's rigidity. To prevent any micro-movements or slippage under high torque loads, I reinforced these metal-to-bearing interfaces with a thin application of JB Weld epoxy.
+
+<div style="display: flex; justify-content: space-around;">
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/reducer.jpg" width="100%" max-width="300px" alt="Actuator image 1" class="img-fluid rounded z-depth-1" %}
+
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image1.png" width="100%" max-width="300px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
+</div>
+
 
 
 ### 4.2 Output Mechanism

@@ -72,9 +72,9 @@ As robots become more integrated into our daily lives, physical interaction and 
 Additionally, the complex dynamics & mechanical impedance of such actuators make them difficult to model accurately in physical simulators, creating a significant Sim-to-Real gap. Such modeling inaccuracies often lead to the failure of hardware deployment, particularly when using policies trained via Reinforcement Learning [[4]](#8-references).
 
 ### 2.2 The QDD System Solution
-To address these issues, I adopted a **Quasi-Direct Drive (QDD) architecture**. A QDD system typically features a low gear reduction ratio, ranging from 1:3 to 1:10. By positioning itself between Direct Drive (1:1) and traditional high-ratio drives (1:50 or higher), it combines the structural advantages of both systems.
+To address these issues, I adopted a **Quasi-Direct Drive (QDD) architecture**. A QDD system typically features a low gear reduction ratio, ranging from 3:1 to 10:1. By positioning itself between Direct Drive (1:1) and traditional high-ratio drives (1:50 or higher), it combines the structural advantages of both systems.
 
-The low gear ratio significantly minimizes friction and reflected inertia, rendering the actuator **inherently compliant**. This compliance ensures the system is smoothly back-drivable and highly responsive to external interactions, effectively mitigating the stiffness drawbacks of conventional actuators.
+The low gear ratio significantly minimizes friction and reflected inertia, making the actuator **inherently compliant**. This compliance ensures the system is smoothly back-drivable and highly responsive to external interactions, effectively mitigating the stiffness drawbacks of conventional actuators.
 
 Consequently, this **improved back-drivability and responsiveness** enable the robot to safely interact with humans and flexibly adapt to uneven terrain during dynamic locomotion.
 
@@ -95,7 +95,7 @@ As shown in the equation, torque is linearly proportional to the stack length ($
 
 ### 2.4 Transmission Selection: Why Cycloidal Reducer?
 
-In dynamic legged locomotion, the actuator must withstand high impact loads caused by ground reaction forces. While **Harmonic Drives** are industry standards for zero-backlash precision, their flexible spline mechanism is notoriously fragile under shock loads.
+In dynamic legged locomotion, the actuator must withstand high impact loads caused by ground reaction forces. While **Harmonic Drives** are industry standards for zero-backlash precision, their flexible spline mechanism is fragile under shock loads. And structurally, it's not suitable for low-ratio reducer.
 
 Similarly, **Planetary Gearboxes**, though common, exhibit inherent backlash. It works well with aluminum gears, but becomes significantly fragile when 3D printed. In a 3D-printed planetary system, the stress concentrates on individual small gear teeth, making them prone to catastrophic failure under sudden external forces.
 
@@ -126,7 +126,6 @@ To optimize torque density within the compact housing, I integrated a **custom-b
 
 For the stator, I utilized a standard 8110 stator core. To achieve the desired current capacity and fill factor, the stator was hand-wound using 0.4mm enameled copper wire. I applied a Wye (Star) termination with 6 parallel strands and 5 turns per tooth, following the optimal winding scheme calculated via open-source tools [[9]](#8-references).
 
-
 The motor adopts a 36N42P configuration (36 slots, 42 poles) to maximize torque output. For the rotor, 42 N52-grade Neodymium magnets were installed. These magnets were precisely bonded using high-strength epoxy (JB Weld) in an alternating polarity pattern (N-S-N-S) to maximize magnetic flux density and ensure structural integrity under high rotation speeds. Crucially, the rotor geometry was optimized to achieve a minimal air gap of 0.5mm. This tight clearance maximizes the magnetic flux linkage between the rotor and stator, thereby significantly enhancing the electromagnetic force and overall torque efficiency.
 
 
@@ -153,7 +152,7 @@ The output transmission relies on smooth rolling contact. I installed six M2x20m
 ---
 
 ## 5. Control & Validation
-To validate the actuator's performance, a preliminary torque control experiment was performed. The torque was applied in a cascaded manner from 1 Nm up to 7 Nm, while maintaining a constant payload torque of approximately 2.2 Nm($1.5kg \times 0.15m \times 9.81m/s^2 \approx 2.2Nm$).
+To validate the actuator's performance, I conduct a torque estimation experiment using load-cell. The torque was applied from 1 Nm up to 10 Nm, while performing maximum torque of 8.8Nm.
 
 ---
 

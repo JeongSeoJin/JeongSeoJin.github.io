@@ -1,6 +1,6 @@
 {% assign extension = include.path | split: '.' | last %}
 
-<figure>
+<figure class="video-container">
   {% if extension == 'mp4' or extension == 'webm' or extension == 'ogg' %}
     <video
       src="{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
@@ -53,7 +53,7 @@
     />
 
   {% else %}
-    <iframe
+    <iframe class="video-iframe"
       src="{{ include.path }}"
       {% if include.class %}
         class="{{ include.class }}"

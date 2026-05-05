@@ -159,6 +159,7 @@ For the housing components printed in PA-CF12 (Carbon Fiber Nylon), I designed a
 
 Conversely, for the CNC-machined Aluminum parts, a tighter 0.02mm interference fit was applied due to the metal's rigidity. To prevent any micro-movements or slippage under high torque loads, I reinforced these metal-to-bearing interfaces with a thin application of JB Weld epoxy.
 
+
 <div style="display: flex; justify-content: space-around;">
 {% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/reducer.jpg" width="100%" max-width="300px" alt="Actuator image 1" class="img-fluid rounded z-depth-1" %}
 

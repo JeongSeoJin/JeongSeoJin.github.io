@@ -28,22 +28,19 @@ toc:
 
 {% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image_4.jpg" width="100%" max-width="600px" alt="Actuator image 2" %}
 
-# Cycloidal QDD Actuator for Dynamic Robots
-
-***Note: This is an ongoing project. Please note that some sections, particularly '5. Control & Validation', are currently being documented. New test results and updates will be uploaded soon.***
 
 [view this page in github with resources](https://github.com/JeongSeoJin/quasi-direct-drive-actuator)
 [youtube](https://www.youtube.com/watch?v=m4KiFf9MHiw)
 
-{% include video.liquid path="https://www.youtube.com/watch?v=m4KiFf9MHiw" width="100%" height="600px" class="img-fluid rounded z-depth-1" %}
+{% include video.liquid path="https://www.youtube.com/embed/m4KiFf9MHiw" width="100%" height="600px" class="img-fluid rounded z-depth-1" %}
 
 ---
 ## Background: Motivation and Evolution
 This Project builds upon my previous project project, 'A Low-Cost 3D-Printed Proprioceptive Actuator for HRI', and represents a significant step forward in performance and design.
 
-In the ealier actuators(v1, v2 and v3), these exhibited insufficient torque density, which limited their application in dynamic and agile robotic systems. The primary cause was the use of off-the-shelf BLDC drone motors; their small air-gap radius, integrated with low-ratio 3D-printed reducers, could not generate the necessary torque. 
+In the ealier actuators(v1, v2 and v3), these exhibited insufficient torque density, which limited their application in dynamic and agile robotic systems. The primary cause was the use of small size off-the-shelf BLDC drone motors; their small air-gap radius and small torque-density could not generate the necessary torque. 
 
-To address this problem, I initiated this project with a focus on maximizing torque density, compactness and system efficiecy. By adopting a large-diameter "pancake" BLDC motor to maximize the air-gap radius for high torque density and integrating a internal cycloidal reducer for compactness, I significantly enhenced the actuator's dynamics and agility. Inspired by the MIT Mini Cheetah's design philosophy, this project demonstrates a transition toward a more robust and high-performance Quasi-Direct Drive (QDD) system.
+To address this problem, I initiated this project, focusing on maximizing torque density, compactness and system efficiecy. By adopting a large-diameter "pancake" BLDC motor to maximize the air-gap radius for high torque density and integrating a internal cycloidal reducer for compactness, I enhenced the actuator's dynamics and agility. Inspired by the MIT Mini Cheetah's design philosophy, this project demonstrates a transition toward a more robust and high-performance Quasi-Direct Drive (QDD) system.
 
 ---
 

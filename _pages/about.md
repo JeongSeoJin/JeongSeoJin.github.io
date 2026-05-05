@@ -27,10 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! I am a first-year Mechanical Engineering student in Korea and a robotics enthusiast who really loves building robots from scratch.
+Hello! I am a first-year Mechanical Engineering student in South Korea and a robotics enthusiast who loves building robots from scratch.
 
-I eager to study Mathmatics, Physics and Robotics to deeply understand my robots and apply theotrical knowledge to challenges in robotic systems through hands-on projects. I'm interested in building robots that can help people, make us live better. To achieve my dream I'm currently focusing on the project 'Building Cycloidal QDD Actuator' and planning to integrate them into a robotic system like bi-pedal robot, bi-manipulator and humanoid robot etc.
+I am eager to study mathematics, physics and robotics to deeply understand my robots and apply theoretical knowledge to real-world challenges through hands-on projects. I'm interested in building robots that can assist people and improve our daily lives. To achieve this, I'm currently focusing on building a 'Cycloidal QDD Actuator' and planning to integrate it into a complex robotic systems such as bipedal robots, bi-manipulators and humanoids.
 
-I believe in the power of open-source. I want to contribute and inspire to the robotics community—helping researchers, students, and hobbyists like I've got inspired to other people. I grew up with getting inspired robotics people who share resources and informative videos. And It's the time that I have to inspire the community. That is why I share my projects as open-source resources.
+I strongly believe in the power of open-source. Growing up, I was deeply inspired by roboticists who shared their resources and informative videos. Now, it's my turn to give back. I want to contribute to and inspire the robotics community—helping researchers, students, and hobbyists just I've been inspired to others. That is why I share my all projects as open-source resources.
 
-I document my journey and resources on [Instagram](https://www.instagram.com/engineering.seojin_n.n?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==), [YouTube](https://youtube.com/@engineeringseojin?si=F3yA-zbrFuG3kMWH), and [GitHub](https://github.com/JeongSeoJin) to share inspiration and engage in critical discussions. I am growing every day, so please look forward to my future projects!
+I document my journey and resources on [Instagram](https://www.instagram.com/engineering.seojin_n.n?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==), [YouTube](https://youtube.com/@engineeringseojin?si=F3yA-zbrFuG3kMWH), and [GitHub](https://github.com/JeongSeoJin) to share inspiration and engage in critical discussions. I'm constantly learning and building, so feel free to connect with me and follow my upcoming projects!

@@ -28,9 +28,7 @@ toc:
 
 {% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image_4.jpg" width="100%" max-width="600px" alt="Actuator image 2" %}
 
-
-[view this page in github with resources](https://github.com/JeongSeoJin/quasi-direct-drive-actuator)
-[youtube](https://www.youtube.com/watch?v=m4KiFf9MHiw)
+{% include repository/repo.liquid repository="JeongSeoJin/quasi-direct-drive-actuator" %}
 
 {% include video.liquid path="https://www.youtube.com/embed/m4KiFf9MHiw" width="100%" class="img-fluid rounded z-depth-1" %}
 

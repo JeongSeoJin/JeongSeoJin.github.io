@@ -112,7 +112,7 @@ I utilized Onshape 3D CAD to design a dual-disc cycloidal mechanism. The two cyc
 
 To maximize efficiency, I integrated rollers into the output pins. Unlike simple sliding contacts, these rollers minimize internal friction at the output stage, contributing to the system's back-drivability.
 
-{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/roller.jpg" width="100%" max-width="300px" alt="Actuator image 1" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/roller.jpg" width="100%" max-width="250px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 
 For the current prototype, the gears, shafts and rotor are manufactured from CNC-machined Aluminum to verify the design with a high strength-to-weight ratio. (Note: The final goal of this project is to optimize the design for a fully 3D-printed, low-cost actuator for dynamic robots.)
 

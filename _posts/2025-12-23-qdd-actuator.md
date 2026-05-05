@@ -173,7 +173,7 @@ The output transmission relies on smooth rolling contact. I installed six M2x20m
 ---
 
 ## 5. Control & Validation
-To validate the actuator's performance, I conduct a torque estimation experiment using load-cell. The torque was applied from 1 Nm up to 10 Nm, while performing maximum torque of 8.8Nm.
+To validate the actuator's performance, I conduct a torque estimation experiment using load-cell. The torque was applied from 1 Nm up to 10 Nm, while performing maximum torque of 8.8Nm. Maximum speed is measured 22rad/s and Nominal speed is 12.6rad/s
 
 {% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/test-set.jpg" width="100%" max-width="250px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
 
@@ -195,9 +195,9 @@ Although this first prototype works successfully, four primary limitations were 
 
 ### 6.2 Future Works
 
-Although the first prototype is working quite nicely, I don't think this prototype is suitable for dynamic robotic system because of the issues that I mentioned above. therefore I'm planning to modify the actuator design and reinforce torque density to achieve successful dynamic robotic actuator in the next iteration(QDD Actuator Ver2)
+Although the first prototype functions adequately, I don't think this prototype is suitable for dynamic robotic systems because of the issues that I mentioned above. Therefore I'm planning to modify the actuator design and improve torque density to achieve successful dynamic robotic actuator in the next iteration (QDD Actuator Ver2)
 
-Moving forward, I aim to integrate these custom QDD actuators into a mid-size bipedal robot and bi-manipulator to validate their performance in a complete system. those robotic system significantly requires the compliant and dynamic behavior of the QDD Actuator. This project will serve as a crucial step in verifying the scalability of my hardware design while providing a physical testbed for implementing advanced locomotion control algorithms and manipulation.
+Moving forward, I aim to integrate these custom QDD actuators into a mid-size bipedal robot and bi-manipulator to validate their performance in a complete system. Those robotic systems strongly require the compliant and dynamic behavior of the QDD Actuator. This project will serve as a crucial step in verifying the scalability of my hardware design while providing a physical testbed for implementing advanced locomotion control algorithms and manipulation tasks.
 
 
 ---

@@ -33,7 +33,9 @@ toc:
 ***Note: This is an ongoing project. Please note that some sections, particularly '5. Control & Validation', are currently being documented. New test results and updates will be uploaded soon.***
 
 [view this page in github with resources](https://github.com/JeongSeoJin/quasi-direct-drive-actuator)
+[youtube](https://www.youtube.com/watch?v=m4KiFf9MHiw)
 
+{% include video.liquid path="https://www.youtube.com/watch?v=m4KiFf9MHiw" width="100%" height="600px" class="img-fluid rounded z-depth-1" %}
 
 ---
 ## Background: Motivation and Evolution

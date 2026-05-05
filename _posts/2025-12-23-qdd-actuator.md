@@ -128,7 +128,11 @@ To optimize torque density within the compact housing, I integrated a **custom-b
 
 For the stator, I utilized a standard 8110 stator core. To achieve the desired current capacity and fill factor, the stator was hand-wound using 0.4mm enameled copper wire. I applied a Wye (Star) termination with 6 parallel strands and 5 turns per tooth, following the optimal winding scheme calculated via open-source tools [[9]](#8-references).
 
+<div style="display: flex; justify-content: space-around;">
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/stator-wind.png" width="100%" max-width="300px" alt="Actuator image 1" class="img-fluid rounded z-depth-1" %}
+
 {% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/stator.jpg" width="100%" max-width="300px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
+</div>
 
 The motor adopts a 36N42P configuration (36 slots, 42 poles) to maximize torque output. For the rotor, 42 N52-grade Neodymium magnets were installed. These magnets were precisely bonded using high-strength epoxy (JB Weld) in an alternating polarity pattern (N-S-N-S) to maximize magnetic flux density and ensure structural integrity under high rotation speeds. Crucially, the rotor geometry was optimized to achieve a minimal air gap of 0.5mm. This tight clearance maximizes the magnetic flux linkage between the rotor and stator, thereby significantly enhancing the electromagnetic force and overall torque efficiency.
 
@@ -178,21 +182,22 @@ To validate the actuator's performance, I conduct a torque estimation experiment
 ## 6. Limitations & Future Works
 ### 6.1 Limitations of the Current Prototype
 
-Through the testing and assembly process, two primary limitations were identified regarding the actuator's performance and structural dynamics.
+Although this first prototype works successfully, four primary limitations were identified regarding the actuator's performance and structural dynamics through the testing and assembly process.
 
-First, Suboptimal Magnetic Flux Path (Rotor Design)
-The current rotor design does not incorporate a ferromagnetic back-iron or a Halbach array arrangement. Consequently, the magnetic flux is not effectively focused inward toward the stator, leading to flux leakage.
+1. Rotor Shaft Rigidity(misalignment issue): > The current aluminium rotor shaft is not a single component, this is constructed as a multi-part assembly fastened with bolts and nuts, rather than a single monolithic part. Consequently, the strong electromagnetic forces between the rotor and stator occasionally cause the central shaft to misalign during rotation, leading to an uneven air gap.
 
-Since air-gap flux density directly correlates with torque generation, this lack of magnetic circuit optimization results in a lower torque density than theoretically possible. In future iterations, adding a steel back-iron will be essential to maximize torque output.
+2. Absence of a Rotor Back-Iron: > The current rotor design does not incorporate a ferromagnetic back-iron or a Halbach array arrangement. I initially overlooked the critical role of the back-iron which concentrates the magnetic flux inward to maximize magnetic force. Without it, the actuator suffers from flux leakage, resulting in a maximum torque which is insufficient for highly dynamic robotic applications.
 
-Second, Structural Rigidity of the Eccentric Shaft
-The second issue lies in the assembly of the eccentric input shaft. Currently, it is constructed as a multi-part assembly fastened with bolts and nuts, rather than a single monolithic part. 
+3. Low Copper Fill Factor: > Since I hand-wound the stator, the copper wires are relatively sparsely packed compared to tightly wound commercial motors. This lower slot fill factor significantly limits the current-carrying capacity and overall torque density.
 
-During operation, the strong radial magnetic attraction between the rotor and stator exerts significant force on the shaft. This force compromises the alignment of the multi-part shaft assembly, causing slight structural deflection. This misalignment leads to unwanted oscillation and vibration, particularly at higher rotational speeds. A monolithic (single-piece) shaft design is required to resolve this issue.
+4. Structural Limits for Modularity: >The design of the housing is not suitable for 3d-printed modular actuator. Because the housings are 3D printed, I have to reinforce and modify the design to withstand external mechanical disturbances.
+
 
 ### 6.2 Future Works
 
-Moving forward, I aim to integrate these custom QDD actuators into a mid-size bipedal robot to validate their performance in a complete system. The target platform will feature a total of 10 degrees of freedom (DoF), with 5 actuators allocated to each leg, specifically designed to handle dynamic walking tasks. This project will serve as a crucial step in verifying the scalability of my hardware design while providing a physical testbed for implementing advanced locomotion control algorithms.
+Although the first prototype is working quite nicely, I don't think this prototype is suitable for dynamic robotic system because of the issues that I mentioned above. therefore I'm planning to modify the actuator design and reinforce torque density to achieve successful dynamic robotic actuator in the next iteration(QDD Actuator Ver2)
+
+Moving forward, I aim to integrate these custom QDD actuators into a mid-size bipedal robot and bi-manipulator to validate their performance in a complete system. those robotic system significantly requires the compliant and dynamic behavior of the QDD Actuator. This project will serve as a crucial step in verifying the scalability of my hardware design while providing a physical testbed for implementing advanced locomotion control algorithms and manipulation.
 
 
 ---

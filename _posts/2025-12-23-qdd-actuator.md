@@ -171,6 +171,8 @@ The output transmission relies on smooth rolling contact. I installed six M2x20m
 ## 5. Control & Validation
 To validate the actuator's performance, I conduct a torque estimation experiment using load-cell. The torque was applied from 1 Nm up to 10 Nm, while performing maximum torque of 8.8Nm.
 
+{% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/test-set.jpg" width="100%" max-width="250px" alt="Actuator image 2" class="img-fluid rounded z-depth-1" %}
+
 ---
 
 ## 6. Limitations & Future Works

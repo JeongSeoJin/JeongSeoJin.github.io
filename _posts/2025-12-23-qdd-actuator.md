@@ -32,7 +32,7 @@ toc:
 [view this page in github with resources](https://github.com/JeongSeoJin/quasi-direct-drive-actuator)
 [youtube](https://www.youtube.com/watch?v=m4KiFf9MHiw)
 
-{% include video.liquid path="https://www.youtube.com/embed/m4KiFf9MHiw" width="100%" height="600px" class="img-fluid rounded z-depth-1" %}
+{% include video.liquid path="https://www.youtube.com/embed/m4KiFf9MHiw" width="100%" class="img-fluid rounded z-depth-1" %}
 
 ---
 ## Background: Motivation and Evolution
@@ -45,11 +45,11 @@ To address this problem, I initiated this project, focusing on maximizing torque
 ---
 
 ## 1. Abstract
-Rapid advancements in dynamic humanoid and quadruped robots have surged recently. However, high-performance actuators remain largely proprietary, restricting access for academic researchers and open-source communities. This project aims to democratize dynamic robotics by developing an open-source Quasi-Direct Drive (QDD) actuator tailored for mid-size humanoid robots.
+Rapid advancements in dynamic humanoid and quadruped robots have surged recently. However, high-performance actuators remain largely proprietary, restricting access for academic researchers and open-source communities. This project aims to democratize dynamic robotics by developing an open-source Quasi-Direct Drive (QDD) actuator tailored for dynamic robots
 
-Traditional high-ratio gearboxes suffer from poor back-drivability, low responsiveness and limited transmission transparency, making them unsuitable for safe Human-Robot Interaction (HRI) and uneven terrain locomotion. To address this, I propose a custom-designed QDD actuator featuring a 1:10 cycloidal reducer. This low-reduction architecture minimizes mechanical impedance, enabling back-drivable, high responsiveness and proprioceptive torque sensing via FOC algorithms without additional sensors.
+Traditional high-ratio gearboxes suffer from poor back-drivability, low responsiveness and limited transmission transparency, making them unsuitable for safe Human-Robot Interaction (HRI) and uneven terrain locomotion. To address this, I propose a custom-designed QDD actuator featuring a 10:1 cycloidal reducer. This low-reduction design minimizes mechanical impedance, enabling back-drivable, high responsiveness and proprioceptive torque sensing via FOC algorithms without additional sensors.
 
-The current prototype utilizes a 3D-printed and aluminium structure to ensure low cost and accessibility. Preliminary assessments estimate a maximum holding torque exceeding 7 Nm, with comprehensive performance verification currently underway. This work contributes to the robotic community by providing a scalable, affordable, and high-performance actuation solution.
+The current prototype utilizes a 3D-printed and aluminium structure to ensure low cost and accessibility. And the performance of my actuator; Maximum Torque: 8.8Nm, Maximum Velocity: 22rad/s and Nominal Velocity 12.6rad/s under 24V. I want this project contributes to the robotic community by providing a scalable, affordable, and the actuation solution.
 
 <div style="display: flex; justify-content: space-around;">
 {% include figure.liquid loading="eager" path="assets/img/c-qdd-actuator/image_1.jpg" width="100%" max-width="300px" alt="Actuator image 1" class="img-fluid rounded z-depth-1" %}

@@ -30,7 +30,7 @@ toc:
 
 {% include repository/repo.liquid repository="JeongSeoJin/quasi-direct-drive-actuator" %}
 
-{% include video.liquid path="https://www.youtube.com/embed/m4KiFf9MHiw" width="100%" class="img-fluid rounded z-depth-1" %}
+{% include video.liquid path="https://www.youtube.com/embed/m4KiFf9MHiw" width="100%" height="600px"class="img-fluid rounded z-depth-1" %}
 
 ---
 ## Background: Motivation and Evolution

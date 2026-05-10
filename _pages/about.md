@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Mechanical Engineering Student who loves Robotics and Science
+subtitle: Mechanical Engineering Undergraduate Student who loves Robotics and Science
 
 profile:
   align: right
